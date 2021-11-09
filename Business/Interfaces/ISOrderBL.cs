@@ -6,6 +6,7 @@ namespace Business
     public interface ISOrderBL : IBaseBL<SOrder>
     {
         SOrder GetByPrimaryKeyWithNav(int orderId);
+        IEnumerable<SOrder> GetAllWithNav();
         IEnumerable<SOrder> GetOrdersByCustomer(Customer entity);
         IEnumerable<SOrder> GetOrdersByStorefront(Storefront entity);
         decimal UpdateTotalPrice(SOrder entity, IEnumerable<LineItem> lineItems);

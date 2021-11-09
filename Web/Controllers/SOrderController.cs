@@ -12,16 +12,20 @@ namespace Web.Controllers
     public class SOrderController : Controller
     {
         readonly ISOrderBL repository;
+        readonly ICustomerBL customerRepository;
+        readonly IStorefrontBL storefrontRepository;
 
-        public SOrderController(ISOrderBL context)
+        public SOrderController(ISOrderBL context, ICustomerBL custContext, IStorefrontBL storeContext)
         {
             this.repository = context;
+            this.customerRepository = custContext;
+            this.storefrontRepository = storeContext;
         }
 
         // GET: SOrderController
         public ActionResult Index()
         {
-            return View(repository.GetAll());
+            return View(repository.GetAllWithNav());
         }
 
         // GET: SOrderController/Details/5
@@ -33,6 +37,10 @@ namespace Web.Controllers
         // GET: SOrderController/Create
         public ActionResult Create()
         {
+            IEnumerable<Customer> customers = customerRepository.GetAll();
+            IEnumerable<Storefront> stores = storefrontRepository.GetAll();
+            ViewData["customers"] = customers;
+            ViewData["stores"] = stores;
             return View();
         }
 

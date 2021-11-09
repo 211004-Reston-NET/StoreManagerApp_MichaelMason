@@ -1,0 +1,51 @@
+﻿@model Models.SOrder
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>SOrder</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StoreNumber" class="control-label">Store</label>
+                <select asp-for="StoreNumber" class="form-control">
+                    @foreach(var item in ViewData["stores"] as IEnumerable<Models.Storefront>)
+            {
+                <option value="@item.StoreNumber">@item.StoreName</option>
+            }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustNumber" class="control-label">Customer</label>
+                <select asp-for="CustNumber" class ="form-control">
+                    @foreach(var item in ViewData["customers"] as IEnumerable<Models.Customer>)
+            {
+                <option value="@item.CustNumber">@item.CustName</option>
+            }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPrice" class="control-label"></label>
+                <input asp-for="TotalPrice" class="form-control" />
+                <span asp-validation-for="TotalPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

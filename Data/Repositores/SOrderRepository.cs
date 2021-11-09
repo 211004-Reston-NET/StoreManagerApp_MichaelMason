@@ -15,6 +15,14 @@ namespace Data
         {
         }
 
+        public IEnumerable<SOrder> GetAllWithNav()
+        {
+            var orders = _context.SOrders
+                .Include(o => o.CustNumberNavigation)
+                .Include(o => o.StoreNumberNavigation);
+            return orders;
+        }
+
         public SOrder GetByPrimaryKeyWithNav(int orderId)
         {
             var order = _context.SOrders

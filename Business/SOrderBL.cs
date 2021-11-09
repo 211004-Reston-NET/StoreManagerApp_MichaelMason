@@ -17,6 +17,11 @@ namespace Business
             this.orderRepository = orderRepository;
         }
 
+        public IEnumerable<SOrder> GetAllWithNav()
+        {
+            return orderRepository.GetAllWithNav();
+        }
+
         public SOrder GetByPrimaryKeyWithNav(int orderId)
         {
             return orderRepository.GetByPrimaryKeyWithNav(orderId);
