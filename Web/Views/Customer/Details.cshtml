@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Models.Customer
+
+<h1>Customer Details</h1>
+<div class="card">
+    <h2 class="card-header">@Html.DisplayFor(i => i.CustName)</h2>
+    <address class="card-body">
+        <p>
+            @Html.DisplayFor(i => i.CustAddress)<br />
+            @Html.DisplayFor(i => i.CustEmail)<br />
+            @Html.DisplayFor(i => i.CustPhone)
+        </p>
+    </address>
+</div>
+<div class="card">
+    <h3 class="card-header">Orders</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Order Id</th>
+                <th>Store Name</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model.SOrders)
+        {
+            <tr>
+                <td>@Html.DisplayFor(i => item.OrderId)</td>
+                <td>@Html.DisplayFor(i => item.StoreNumberNavigation.StoreName)</td>
+                <td>@Html.DisplayFor(i => item.TotalPrice)</td>
+            </tr>
+        }
+    </table>
+</div>

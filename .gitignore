@@ -1,0 +1,7 @@
+.vscode
+bin
+obj
+.vs
+appsetting.json
+appsettings.json
+Web/appsettings.json
