@@ -71,20 +71,17 @@ jobs:
     
     - name: Publish
       run: dotnet publish --configuration Release -o Releases
+      
+    - name: Upload sonarscanner report
+      uses: actions/upload-artifact@v2
+      with:
+        name: StoreManagerApp
+        path: Releases
     
-  deploy:
-    runs-on: windows-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: $${{steps.deploy-to-webapp.output.webapp-url}}
-    
-    steps:
     - name: Deploy
       uses: azure/webapps-deploy@v2
       with:
         app-name: StoreManagerApp
-        slot-name: 'Production'
         publish-profile: ${{secrets.AZURE_STOREMANAGERAPP_PUBLISH_PROFILE}}
         package: Releases
 
