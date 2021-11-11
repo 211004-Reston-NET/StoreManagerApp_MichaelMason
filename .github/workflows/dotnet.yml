@@ -30,7 +30,7 @@ jobs:
     - name: Publish
       run: dotnet publish --configuration Release -o Releases
     - name: Deploy
-      uses: azure/webapps-deploy@2
+      uses: azure/webapps-deploy@v2
       with:
         app-name: StoreManagerApp
         publish-profile: ${{secrets.AZURE_STOREMANAGERAPP_PUBLISH_PROFILE}}
