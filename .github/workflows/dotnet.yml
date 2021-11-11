@@ -85,6 +85,6 @@ jobs:
       with:
         app-name: StoreManagerApp
         slot-name: 'Production'
-        publish-profile: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
+        publish-profile: ${{secrets.AZURE_STOREMANAGERAPP_PUBLISH_PROFILE}}
         package: Releases
 
