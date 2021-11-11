@@ -1,9 +1,18 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Howie's Hamburgers";
 }
 
-<div class="text-center">
-    <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
-    <a class="nav-link text-dark" asp-area="" asp-controller="SOrder" asp-action="Index">Orders</a>
+@model IEnumerable<Models.Product>
 
+<div class="row justify-content-between">
+    @foreach (var item in Model)
+    {
+        <div class="card col-4">
+            <img width="200" height="200" />
+            @item.ProdName <br />
+            @item.ProdPrice <br />
+            @item.ProdDescription <br />
+            <button type="button" class="btn btn-primary">Buy</button>
+        </div>
+    }
 </div>

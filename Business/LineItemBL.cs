@@ -11,10 +11,20 @@ namespace Business
 
     public class LineItemBL : BaseBL<LineItem>, ILineItemBL
     {
-        readonly IRepository<LineItem> lineItemRepository;
-        public LineItemBL(IRepository<LineItem> context) : base(context)
+        readonly ILineItemRepository lineItemRepository;
+        public LineItemBL(ILineItemRepository lineItemRepository) : base(lineItemRepository)
         {
-            lineItemRepository = context;
+            this.lineItemRepository = lineItemRepository;
+        }
+
+        public IEnumerable<LineItem> GetAllWithNav()
+        {
+            return lineItemRepository.GetAllWithNav();
+        }
+
+        public LineItem GetByPrimaryKeyWithNav(int lineId)
+        {
+            return lineItemRepository.GetByPrimaryKeyWithNav(lineId);
         }
 
         public IEnumerable<LineItem> GetLineItemsByOrder(SOrder entity)
@@ -26,6 +36,7 @@ namespace Business
         {
             return lineItemRepository.GetAll().Where(l => l.ProdId.Equals(entity.ProdId));
         }
+
         public bool LineItemQuantityIsGreaterThanInventory(Inventory inventory, LineItem lineitem)
         {
             if (lineitem.Quantity > inventory.Quantity)

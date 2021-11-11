@@ -21,7 +21,7 @@ namespace Models
 
         [Required]
         [Display(Name = "Name")]
-        [RegularExpression(@"^[a-z0-9.' !]+$", ErrorMessage = "Invalid name")]
+        [RegularExpression(@"^[a-zA-Z0-9.' !]+$", ErrorMessage = "Invalid name")]
         public string StoreName
         {
             get => _storeName;
@@ -41,7 +41,7 @@ namespace Models
 
         [Required]
         [Display(Name = "Address")]
-        [RegularExpression(@"^[a-z0-9. ,'-]+$", ErrorMessage = "Invalid address")]
+        [RegularExpression(@"^[a-zA-Z0-9. ,'-]+$", ErrorMessage = "Invalid address")]
         public string StoreAddress
         {
             get => _storeAddress;

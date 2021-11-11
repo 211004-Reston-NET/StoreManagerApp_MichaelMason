@@ -63,7 +63,7 @@ namespace Models
 
         [Required]
         [Display(Name = "Description")]
-        [RegularExpression(@"^[a-zA-Z0-9.' !-]+$", ErrorMessage = "You must enter a description")]
+        [RegularExpression(@"^[a-zA-Z0-9.',/ !-]+$", ErrorMessage = "You must enter a description")]
         public string ProdDescription 
         {
             get => _prodDescription;
@@ -73,7 +73,7 @@ namespace Models
                 {
                     throw new Exception("You must enter an description");
                 }
-                if (!Regex.IsMatch(value, @"^[a-z0-9.' !-]+$", RegexOptions.IgnoreCase))
+                if (!Regex.IsMatch(value, @"^[a-zA-Z0-9.',/ !-]+$", RegexOptions.IgnoreCase))
                 {
                     throw new Exception("Description is invalid");
                 }

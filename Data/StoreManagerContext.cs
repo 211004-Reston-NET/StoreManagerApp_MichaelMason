@@ -77,11 +77,13 @@ namespace Data
                 entity.HasOne(d => d.Prod)
                     .WithMany(p => p.Inventories)
                     .HasForeignKey(d => d.ProdId)
+                    .OnDelete(DeleteBehavior.ClientCascade)
                     .HasConstraintName("FK__inventory__prod___047AA831");
 
                 entity.HasOne(d => d.StoreNumberNavigation)
                     .WithMany(p => p.Inventories)
                     .HasForeignKey(d => d.StoreNumber)
+                    .OnDelete(DeleteBehavior.ClientCascade)
                     .HasConstraintName("FK__inventory__store__038683F8");
             });
 
@@ -103,11 +105,13 @@ namespace Data
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.LineItems)
                     .HasForeignKey(d => d.OrderId)
+                    .OnDelete(DeleteBehavior.ClientCascade)
                     .HasConstraintName("FK__line_item__order__7FB5F314");
 
                 entity.HasOne(d => d.Prod)
                     .WithMany(p => p.LineItems)
                     .HasForeignKey(d => d.ProdId)
+                    .OnDelete(DeleteBehavior.ClientCascade)
                     .HasConstraintName("FK__line_item__prod___00AA174D");
             });
 
@@ -153,6 +157,10 @@ namespace Data
 
                 entity.Property(e => e.StoreNumber).HasColumnName("store_number");
 
+                //entity.Property(e => e.Date)
+                    // .HasColumnType("datetime")
+                    // .HasColumnName("date");
+
                 entity.Property(e => e.TotalPrice)
                     .HasColumnType("money")
                     .HasColumnName("total_price");
@@ -160,11 +168,13 @@ namespace Data
                 entity.HasOne(d => d.CustNumberNavigation)
                     .WithMany(p => p.SOrders)
                     .HasForeignKey(d => d.CustNumber)
+                    .OnDelete(DeleteBehavior.ClientCascade)
                     .HasConstraintName("FK__s_order__cust_nu__7CD98669");
 
                 entity.HasOne(d => d.StoreNumberNavigation)
                     .WithMany(p => p.SOrders)
                     .HasForeignKey(d => d.StoreNumber)
+                    .OnDelete(DeleteBehavior.ClientCascade)
                     .HasConstraintName("FK__s_order__store_n__7BE56230");
             });
 

@@ -14,6 +14,11 @@ namespace Business
             this.productRepository = productRepository;
         }
 
+        public IEnumerable<Product> GetAllWithNav()
+        {
+            return productRepository.GetAllWithNav();
+        }
+
         public Product GetByPrimaryKeyWithNav(int prodId)
         {
             return productRepository.GetByPrimaryKeyWithNav(prodId);

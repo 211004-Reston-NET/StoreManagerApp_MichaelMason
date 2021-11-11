@@ -9,10 +9,20 @@ namespace Business
 
     public class InventoryBl : BaseBL<Inventory>, IInventoryBl
     {
-        readonly IRepository<Inventory> inventoryRepository;
-        public InventoryBl(IRepository<Inventory> context) : base(context)
+        readonly IInventoryRepository inventoryRepository;
+        public InventoryBl(IInventoryRepository inventoryRepository) : base(inventoryRepository)
         {
-            inventoryRepository = context;
+            this.inventoryRepository = inventoryRepository;
+        }
+
+        public IEnumerable<Inventory> GetAllWithNav()
+        {
+            return inventoryRepository.GetAllWithNav();
+        }
+
+        public Inventory GetByPrimaryKeyWithNav(int invId)
+        {
+            return inventoryRepository.GetByPrimaryKeyWithNav(invId);
         }
 
         public IEnumerable<Inventory> GetInventoriesByStore(Storefront entity)

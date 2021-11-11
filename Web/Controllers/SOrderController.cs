@@ -11,27 +11,29 @@ namespace Web.Controllers
 {
     public class SOrderController : Controller
     {
-        readonly ISOrderBL repository;
+        readonly ISOrderBL orderRepository;
         readonly ICustomerBL customerRepository;
         readonly IStorefrontBL storefrontRepository;
+        readonly IProductBL productRepository;
 
-        public SOrderController(ISOrderBL context, ICustomerBL custContext, IStorefrontBL storeContext)
+        public SOrderController(ISOrderBL context, ICustomerBL custContext, IStorefrontBL storeContext, IProductBL productContext)
         {
-            this.repository = context;
+            this.orderRepository = context;
             this.customerRepository = custContext;
             this.storefrontRepository = storeContext;
+            this.productRepository = productContext;
         }
 
         // GET: SOrderController
         public ActionResult Index()
         {
-            return View(repository.GetAllWithNav());
+            return View(orderRepository.GetAllWithNav());
         }
 
         // GET: SOrderController/Details/5
         public ActionResult Details(int id)
         {
-            return View(repository.GetByPrimaryKeyWithNav(id));
+            return View(orderRepository.GetByPrimaryKeyWithNav(id));
         }
 
         // GET: SOrderController/Create
@@ -39,8 +41,11 @@ namespace Web.Controllers
         {
             IEnumerable<Customer> customers = customerRepository.GetAll();
             IEnumerable<Storefront> stores = storefrontRepository.GetAll();
+            IEnumerable<Product> products = productRepository.GetAll();
             ViewData["customers"] = customers;
             ViewData["stores"] = stores;
+            ViewData["products"] = products;
+            ViewData["lineItem"] = new LineItem();
             return View();
         }
 
@@ -55,10 +60,10 @@ namespace Web.Controllers
                 {
                     CustNumber = int.Parse(collection["CustNumber"]),
                     StoreNumber = int.Parse(collection["StoreNumber"]),
-                    TotalPrice = 0
+                    TotalPrice = decimal.Parse(collection["TotalPrice"])
                 };
-                repository.Create(order);
-                repository.Save();
+                orderRepository.Create(order);
+                orderRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -70,7 +75,11 @@ namespace Web.Controllers
         // GET: SOrderController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View(repository.GetByPrimaryKey(id));
+            IEnumerable<Customer> customers = customerRepository.GetAll();
+            IEnumerable<Storefront> stores = storefrontRepository.GetAll();
+            ViewData["customers"] = customers;
+            ViewData["stores"] = stores;
+            return View(orderRepository.GetByPrimaryKey(id));
         }
 
         // POST: SOrderController/Edit/5
@@ -80,10 +89,12 @@ namespace Web.Controllers
         {
             try
             {
-                var order = repository.GetByPrimaryKey(id);
+                var order = orderRepository.GetByPrimaryKey(id);
                 order.CustNumber = int.Parse(collection["CustNumber"]);
                 order.StoreNumber = int.Parse(collection["StoreNumber"]);
-                order.TotalPrice = int.Parse(collection["TotalPrice"]);
+                order.TotalPrice = decimal.Parse(collection["TotalPrice"]);
+                orderRepository.Update(order);
+                orderRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -95,7 +106,7 @@ namespace Web.Controllers
         // GET: SOrderController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View(repository.GetByPrimaryKey(id));
+            return View(orderRepository.GetByPrimaryKeyWithNav(id));
         }
 
         // POST: SOrderController/Delete/5
@@ -105,9 +116,9 @@ namespace Web.Controllers
         {
             try
             {
-                var order = repository.GetByPrimaryKey(id);
-                repository.Delete(order);
-                repository.Save();
+                var order = orderRepository.GetByPrimaryKeyWithNav(id);
+                orderRepository.Delete(order);
+                orderRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
             catch

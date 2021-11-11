@@ -15,6 +15,14 @@ namespace Data
         {
         }
 
+        public IEnumerable<Product> GetAllWithNav()
+        {
+            var products = _context.Products
+                .Include(p => p.Inventories)
+                .ThenInclude(p => p.StoreNumberNavigation);
+            return products;
+        }
+
         public Product GetByPrimaryKeyWithNav(int prodId)
         {
             var product = _context.Products

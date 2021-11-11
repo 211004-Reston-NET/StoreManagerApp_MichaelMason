@@ -38,12 +38,8 @@ namespace Web
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IStorefrontRepository, StorefrontRepository>();
             services.AddScoped<ISOrderRepository, SOrderRepository>();
-            //services.AddScoped<IRepository<Customer>, Repository<Customer>>();
-            services.AddScoped<IRepository<Inventory>, Repository<Inventory>>();
-            services.AddScoped<IRepository<LineItem>, Repository<LineItem>>();
-            //services.AddScoped<IRepository<Product>, Repository<Product>>();
-            //services.AddScoped<IRepository<SOrder>, Repository<SOrder>>();
-            //services.AddScoped<IRepository<Storefront>, Repository<Storefront>>();
+            services.AddScoped<ILineItemRepository, LineItemRepository>();
+            services.AddScoped<IInventoryRepository, InventoryRepository>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 

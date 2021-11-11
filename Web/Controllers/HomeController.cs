@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -12,15 +13,18 @@ namespace Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        readonly IProductBL productRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IProductBL context)
         {
             _logger = logger;
+            productRepository = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var products = productRepository.GetAllWithNav();
+            return View(products);
         }
 
         public IActionResult Privacy()
