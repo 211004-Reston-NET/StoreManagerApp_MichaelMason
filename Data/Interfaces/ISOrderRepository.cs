@@ -7,5 +7,6 @@ namespace Data
     {
         SOrder GetByPrimaryKeyWithNav(int orderId);
         IEnumerable<SOrder> GetAllWithNav();
+        void UpdateInventoryOnSale(int prodId, int quantity);
     }
 }

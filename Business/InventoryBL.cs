@@ -39,15 +39,5 @@ namespace Business
         {
             entity.Quantity += quantity;
         }
-        /*
-        public void JoinProductAndStore(Inventory entity)
-        {
-            return (from prod in prodBL.Products
-                    join inv in prodBL.Inventories
-                    on prod.ProdId equals inv.ProdId
-                    where storeId == inv.StoreNumber
-                    select prod);
-        }
-        */
     }
 }

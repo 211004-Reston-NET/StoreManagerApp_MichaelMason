@@ -12,9 +12,11 @@ namespace Business
     public class SOrderBL : BaseBL<SOrder>, ISOrderBL
     {
         protected readonly ISOrderRepository orderRepository;
-        public SOrderBL(ISOrderRepository orderRepository) : base(orderRepository)
+        readonly IProductBL productRepository;
+        public SOrderBL(ISOrderRepository orderRepository, IProductBL productRepository) : base(orderRepository)
         {
             this.orderRepository = orderRepository;
+            this.productRepository = productRepository;
         }
 
         public IEnumerable<SOrder> GetAllWithNav()
@@ -37,14 +39,16 @@ namespace Business
             return orderRepository.GetAll().Where(s => s.CustNumber.Equals(entity.CustNumber));
         }
 
-        public decimal UpdateTotalPrice(SOrder entity, IEnumerable<LineItem> lineItems)
+        public decimal UpdateTotalPrice(int prodId, int quantity)
         {
-            decimal total = 0;
-            foreach (var item in lineItems)
-            {
-                entity.TotalPrice += item.Quantity * item.Prod.ProdPrice;
-            }
-            return total;
+            
+                var prod = productRepository.GetByPrimaryKey(prodId);
+                return quantity * prod.ProdPrice;
+        }
+
+        public void UpdateInventoryOnSale(int prodId, int quantity)
+        {
+            orderRepository.UpdateInventoryOnSale(prodId, quantity);
         }
     }
 }

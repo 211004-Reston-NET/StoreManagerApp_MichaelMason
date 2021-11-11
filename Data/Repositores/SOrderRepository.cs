@@ -33,5 +33,12 @@ namespace Data
                 .Single(o => o.OrderId.Equals(orderId));
             return order;
         }
+
+        public void UpdateInventoryOnSale(int prodId, int quantity)
+        {
+            var inventory = _context.Inventories.Single(i => i.ProdId.Equals(prodId));
+            inventory.Quantity -= quantity;
+            _context.Update<Inventory>(inventory);
+        }
     }
 }

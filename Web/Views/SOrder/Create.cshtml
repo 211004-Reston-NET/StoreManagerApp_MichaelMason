@@ -35,10 +35,10 @@
                 function addRow(frm) {
                     rowNum++;
                     var row = `
-                    <p id="rowNum${rowNum}">
-                        <div class="form-group">
+                    <div class="${rowNum}">
+                        <div class="form-group" >
                             <label asp-for='@ViewData["products.ProdId"]' class="control-label">Product</label>
-                            <select name="prod${rowNum}" asp-for='@ViewData["products.ProdId"]' class="form-control">
+                            <select name="productId${rowNum}" asp-for='@ViewData["products.ProdId"]' class="form-control">
                                 @foreach (var item in ViewData["products"] as IEnumerable<Models.Product>)
                                 {
                                     <option value="@item.ProdId">@item.ProdName</option>
@@ -47,19 +47,17 @@
                         </div>
                         <div class="form-group">
                             <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
-                            <input name="line${rowNum}" asp-for='@ViewData["lineItem.Quantity"]' class= "form-control" />
+                            <input name="lineQuant${rowNum}" asp-for='@ViewData["lineItem.Quantity"]' class= "form-control" />
                             <span asp-validation-for='@ViewData["lineItem.Quantity"]' class="text-danger"></span>
                         </div>
                         <input type="button" value="Remove" onclick="removeRow(${rowNum});">
-                    </p>
+                    </div>
                     `
                     //var row = '<p id="rowNum' + rowNum + '">Item quantity: <input type="text" name="qty[]" size="4" value="' + frm.add_qty.value + '"> Item name: <input type="text" name="name[]" value="' + frm.add_name.value + '"> <input type="button" value="Remove" onclick="removeRow(' + rowNum + ');"></p>';
-                    jQuery('#itemRows').append(row);
-                    frm.add_qty.value = '';
-                    frm.add_name.value = '';
+                    $('#itemRows').append(row);
                 }
                 function removeRow(rnum) {
-                    jQuery('#rowNum' + rnum).remove();
+                    $("div").remove("." + rnum);
                 }
             </script>
             <div id="itemRows">
@@ -77,14 +75,16 @@
                     <input asp-for='@ViewData["lineItem.Quantity"]' class="form-control" />
                     <span asp-validation-for='@ViewData["lineItem.Quantity"]' class="text-danger"></span>
                 </div>
-                <input onclick="addRow(this.form);" type="button" value="Add row" />
+                <input onclick="addRow(this.div);" type="button" value="Add row" />
             </div>
 
+            <!--
             <div class="form-group">
                 <label asp-for="TotalPrice" class="control-label"></label>
                 <input asp-for="TotalPrice" class="form-control" />
                 <span asp-validation-for="TotalPrice" class="text-danger"></span>
             </div>
+            -->
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

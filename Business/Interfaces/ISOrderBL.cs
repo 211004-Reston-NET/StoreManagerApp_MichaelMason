@@ -9,6 +9,7 @@ namespace Business
         IEnumerable<SOrder> GetAllWithNav();
         IEnumerable<SOrder> GetOrdersByCustomer(Customer entity);
         IEnumerable<SOrder> GetOrdersByStorefront(Storefront entity);
-        decimal UpdateTotalPrice(SOrder entity, IEnumerable<LineItem> lineItems);
+        decimal UpdateTotalPrice(int prodId, int quantity);
+        void UpdateInventoryOnSale(int prodId, int quantity);
     }
 }
