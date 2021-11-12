@@ -19,10 +19,15 @@ namespace UnitTest
         [Theory]
         [InlineData("Joe's b@@t emporium")]
         [InlineData("Joe's Boot% emporium")]
-        [InlineData(null)]
         public void StoreNameThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testStorefront.StoreName = input);
+            Assert.Throws<FormatException>(() => testStorefront.StoreName = input);
+        }
+        [Theory]
+        [InlineData(null)]
+        public void StoreNameThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testStorefront.StoreName = input);
         }
 
         [Fact]
@@ -37,10 +42,14 @@ namespace UnitTest
         [Theory]
         [InlineData("@()&&!")]
         [InlineData(":}{|:?")]
-        [InlineData(null)]
         public void StoreAddressThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testStorefront.StoreAddress = input);
+            Assert.Throws<FormatException>(() => testStorefront.StoreAddress = input);
+        }
+        [InlineData(null)]
+        public void StoreAddressThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testStorefront.StoreAddress = input);
         }
     }
 }

@@ -27,10 +27,15 @@ namespace UnitTest
         [Theory]
         [InlineData("Abc123")]
         [InlineData("adb@#$")]
-        [InlineData(null)]
-        public void CustomerNameThrowsException(string input)
+        public void CustomerNameThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testCustomer.CustName = input);
+            Assert.Throws<FormatException>(() => testCustomer.CustName = input);
+        }
+        [Theory]
+        [InlineData(null)]
+        public void CustomerNameThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testCustomer.CustName = input);
         }
 
         [Fact]
@@ -45,10 +50,15 @@ namespace UnitTest
         [Theory]
         [InlineData("!234 test")]
         [InlineData("@234 jkljfs")]
-        [InlineData(null)]
-        public void InvalidAddressThrowsException(string input)
+        public void AddressThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testCustomer.CustAddress = input);
+            Assert.Throws<FormatException>(() => testCustomer.CustAddress = input);
+        }
+        [Theory]
+        [InlineData(null)]
+        public void AddressThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testCustomer.CustAddress = input);
         }
 
         [Fact]
@@ -64,10 +74,16 @@ namespace UnitTest
         [InlineData("joe!@gmail.com")]
         [InlineData("joe=@gmail.com")]
         [InlineData("joe#@gmail.com")]
-        [InlineData(null)]
         public void EmailThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testCustomer.CustEmail = input);
+            Assert.Throws<FormatException>(() => testCustomer.CustEmail = input);
+        }
+
+        [Theory]
+        [InlineData(null)]
+        public void EmailThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testCustomer.CustEmail = input);
         }
     }
 }

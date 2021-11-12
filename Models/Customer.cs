@@ -34,7 +34,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9.+@]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Email address is invalid");
+                    throw new FormatException("Email address is invalid");
                 }
                 _custEmail = value;
             }
@@ -54,7 +54,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-z -]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Name is invalid");
+                    throw new FormatException("Name is invalid");
                 }
                 _custName = value;
             }
@@ -74,7 +74,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9. ,-]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Address is invalid");
+                    throw new FormatException("Address is invalid");
                 }
                 _custAddress = value;
             }
@@ -94,7 +94,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[0-9-]+$"))
                 {
-                    throw new Exception("Phone is invalid");
+                    throw new FormatException("Phone is invalid");
                 }
                 _custPhone = value;
             }

@@ -18,10 +18,15 @@ namespace UnitTest
         [Theory]
         [InlineData("F@@tolkjh")]
         [InlineData("%*&@*&")]
-        [InlineData(null)]
         public void ProductNameThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testProduct.ProdName = input);
+            Assert.Throws<FormatException>(() => testProduct.ProdName = input);
+        }
+        [Theory]
+        [InlineData(null)]
+        public void ProductNameThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testProduct.ProdName = input);
         }
         [Fact]
         public void ProductDescriptionIsValid()
@@ -34,10 +39,14 @@ namespace UnitTest
         [Theory]
         [InlineData("F@@tolkjh")]
         [InlineData("%*&@*&")]
-        [InlineData(null)]
         public void ProductDescriptionThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testProduct.ProdDescription = input);
+            Assert.Throws<FormatException>(() => testProduct.ProdDescription = input);
+        }
+        [InlineData(null)]
+        public void ProductDescriptionThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testProduct.ProdDescription = input);
         }
 
         [Fact]
@@ -51,10 +60,15 @@ namespace UnitTest
         [Theory]
         [InlineData("F@@tolkjh")]
         [InlineData("%*&@*&")]
-        [InlineData(null)]
         public void ProductCategoryThrowsExceptionOnInvalid(string input)
         {
-            Assert.Throws<Exception>(() => testProduct.ProdCategory = input);
+            Assert.Throws<FormatException>(() => testProduct.ProdCategory = input);
+        }
+        [Theory]
+        [InlineData(null)]
+        public void ProductCategoryThrowsExceptionOnNull(string input)
+        {
+            Assert.Throws<ArgumentNullException>(() => testProduct.ProdCategory = input);
         }
     }
 }

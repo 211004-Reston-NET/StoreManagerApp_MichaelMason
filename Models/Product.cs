@@ -35,7 +35,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9.' !-]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Product name is invalid");
+                    throw new FormatException("Product name is invalid");
                 }
                 _prodName = value;
             }
@@ -54,7 +54,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value.ToString(), @"^[0-9.]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Price is invalid");
+                    throw new FormatException("Price is invalid");
                 }
                 _prodPrice = (decimal)value;
             }
@@ -75,7 +75,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-zA-Z0-9.',/ !-]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Description is invalid");
+                    throw new FormatException("Description is invalid");
                 }
                 _prodDescription = value;
             }
@@ -96,7 +96,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-z ]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Category is invalid");
+                    throw new FormatException("Category is invalid");
                 }
                 _prodCategory = value;
             }

@@ -33,7 +33,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9.' !]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Store name is invalid");
+                    throw new FormatException("Store name is invalid");
                 }
                 _storeName = value;
             }
@@ -53,7 +53,7 @@ namespace Models
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9. ,'-]+$", RegexOptions.IgnoreCase))
                 {
-                    throw new Exception("Store name is invalid");
+                    throw new FormatException("Store name is invalid");
                 }
                 _storeAddress = value;
             }
