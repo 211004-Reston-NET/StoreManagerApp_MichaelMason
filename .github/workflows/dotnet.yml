@@ -27,10 +27,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.11
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-    
+   
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
       with:
@@ -57,7 +54,7 @@ jobs:
       run: dotnet restore
       
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --logger trx --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
     
     - name: Build and analyze
       env:
@@ -69,14 +66,14 @@ jobs:
         dotnet build --configuration Release --no-restore
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
     
-    - name: Publish
-      run: dotnet publish --configuration Release -o Releases
-      
-    - name: Upload sonarscanner report
+    - name: Upload artifact for deployment
       uses: actions/upload-artifact@v2
       with:
-        name: StoreManagerApp
+        name: Web
         path: Releases
+
+    - name: Publish
+      run: dotnet publish --configuration Release -o Releases
     
     - name: Deploy
       uses: azure/webapps-deploy@v2
