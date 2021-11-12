@@ -26,9 +26,26 @@ namespace Web.Controllers
         }
 
         // GET: StorefrontController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(int id, string orderSort=null, string priceSort=null)
         {
-            return View(repository.GetByPrimaryKeyWithNav(id));
+            var storefront = repository.GetByPrimaryKeyWithNav(id);
+            if (orderSort == "asc")
+            {
+                storefront.SOrders = storefront.SOrders.OrderBy(o => o.OrderId).ToList();
+            }
+            if (orderSort == "desc")
+            {
+                storefront.SOrders = storefront.SOrders.OrderByDescending(o => o.OrderId).ToList();
+            }
+            if (priceSort == "asc")
+            {
+                storefront.SOrders = storefront.SOrders.OrderBy(o => o.TotalPrice).ToList();
+            }
+            if (priceSort == "desc")
+            {
+                storefront.SOrders = storefront.SOrders.OrderByDescending(o => o.TotalPrice).ToList();
+            }
+            return View(storefront);
         }
 
         // GET: StorefrontController/Create

@@ -23,82 +23,22 @@ namespace Models
         [Required]
         [Display(Name = "Email")]
         [RegularExpression(@"^[a-zA-Z0-9.+@]+$", ErrorMessage = "Invalid email")]
-        public string CustEmail
-        {
-            get => _custEmail;
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("You must enter an email");
-                }
-                if (!Regex.IsMatch(value, @"^[a-z0-9.+@]+$", RegexOptions.IgnoreCase))
-                {
-                    throw new FormatException("Email address is invalid");
-                }
-                _custEmail = value;
-            }
-        }
+        public string CustEmail { get; set; }
 
         [Required]
         [Display(Name = "Name")]
         [RegularExpression(@"^[a-zA-Z -]+$", ErrorMessage = "Invalid name")]
-        public string CustName
-        {
-            get => _custName;
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("You must enter an name");
-                }
-                if (!Regex.IsMatch(value, @"^[a-z -]+$", RegexOptions.IgnoreCase))
-                {
-                    throw new FormatException("Name is invalid");
-                }
-                _custName = value;
-            }
-        }
+        public string CustName { get; set; }
 
         [Required]
         [Display(Name = "Address")]
         [RegularExpression(@"^[a-zA-Z0-9. ,-]+$", ErrorMessage = "Invalid address")]
-        public string CustAddress
-        {
-            get => _custAddress;
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("You must enter an address");
-                }
-                if (!Regex.IsMatch(value, @"^[a-z0-9. ,-]+$", RegexOptions.IgnoreCase))
-                {
-                    throw new FormatException("Address is invalid");
-                }
-                _custAddress = value;
-            }
-        }
+        public string CustAddress { get; set; }
 
         [Required]
         [Display(Name = "Phone")]
         [RegularExpression(@"^[0-9-]+$", ErrorMessage = "Invalid phone number")]
-        public string CustPhone 
-        {
-            get => _custPhone;
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("You must enter a phone number");
-                }
-                if (!Regex.IsMatch(value, @"^[0-9-]+$"))
-                {
-                    throw new FormatException("Phone is invalid");
-                }
-                _custPhone = value;
-            }
-        }
+        public string CustPhone  { get; set; }
 
         public virtual ICollection<SOrder> SOrders { get; set; }
     

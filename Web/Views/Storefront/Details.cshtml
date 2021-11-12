@@ -4,22 +4,23 @@
     ViewData["Title"] = "Details";
 }
 
+
 <h1>Details</h1>
 
 <div class="card">
     <h4 class="card-header">Storefront</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.StoreName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.StoreName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.StoreAddress)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.StoreAddress)
         </dd>
     </dl>
@@ -30,11 +31,11 @@
         <caption>Store Details</caption>
         <thead>
             <tr>
-                <th scope="col">Product</td>
-                <th scope="col">Price</td>
-                <th scope="col">Description</td>
-                <th scope="col">Category</td>
-                <th scope="col">Quantity</td>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+                <th scope="col">Quantity</th>
             </tr>
         </thead>
         @foreach (var item in Model.Inventories)
@@ -50,25 +51,52 @@
     </table>
 </div>
 <div class="card">
-    <h3 class="card-header">Orders</h3>
-    <table class="table table-striped">
-        <caption>Store Orders</caption>
-        <thead>
-            <tr>
-                <th scope="col">Order Number</td>
-                <th scope="col">Total Price</td>
-            </tr>
-        </thead>
+<h3 class="card-header">Orders</h3>
+<table class="table table-striped">
+    <caption>Store Orders</caption>
+    <thead>
+        <tr>
+            <th>
+                Date
+                <form>
+                    <input type="hidden" id="orderSort" name="orderSort" value="asc" />
+                    <button type="submit" class="btn btn-primary">Asc</button>
+                </form>
+                <form>
+                    <input type="hidden" id="orderSort" name="orderSort" value="desc"/>
+                    <button type="submit" class="btn btn-primary">Desc</button>
+                </form>
+            </th>
+            <th>Order Number</th>
+            <th>
+                Total Price
+                <form>
+                    <input type="hidden" id="priceSort" name="priceSort" value="asc" />
+                    <button type="submit" class="btn btn-primary">Asc</button>
+                </form>
+                <form>
+                    <input type="hidden" id="priceSort" name="priceSort" value="desc" />
+                    <button type="submit" class="btn btn-primary">Desc</button>
+                </form>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
         @foreach (var item in Model.SOrders)
         {
             <tr>
+                <td>@Html.DisplayFor(i => item.Date)</td>
                 <td>@Html.DisplayFor(i => item.OrderId)</td>
                 <td>@Html.DisplayFor(i => item.TotalPrice)</td>
             </tr>
         }
-    </table>
+    </tbody>
+</table>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.StoreNumber">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
+
+

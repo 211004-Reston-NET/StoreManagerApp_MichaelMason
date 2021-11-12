@@ -22,43 +22,13 @@ namespace Models
         [Required]
         [Display(Name = "Name")]
         [RegularExpression(@"^[a-zA-Z0-9.' !]+$", ErrorMessage = "Invalid name")]
-        public string StoreName
-        {
-            get => _storeName;
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("You must enter a name");
-                }
-                if (!Regex.IsMatch(value, @"^[a-z0-9.' !]+$", RegexOptions.IgnoreCase))
-                {
-                    throw new FormatException("Store name is invalid");
-                }
-                _storeName = value;
-            }
-        }
+        public string StoreName { get; set; }
 
         [Required]
         [Display(Name = "Address")]
         [RegularExpression(@"^[a-zA-Z0-9. ,'-]+$", ErrorMessage = "Invalid address")]
-        public string StoreAddress
-        {
-            get => _storeAddress;
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("You must enter an address");
-                }
-                if (!Regex.IsMatch(value, @"^[a-z0-9. ,'-]+$", RegexOptions.IgnoreCase))
-                {
-                    throw new FormatException("Store name is invalid");
-                }
-                _storeAddress = value;
-            }
-        }
-
+        public string StoreAddress { get; set; }
+       
         public virtual ICollection<Inventory> Inventories { get; set; }
         public virtual ICollection<SOrder> SOrders { get; set; }
 

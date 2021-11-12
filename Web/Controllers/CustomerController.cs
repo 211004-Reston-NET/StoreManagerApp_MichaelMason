@@ -17,9 +17,13 @@ namespace Web.Controllers
         }
 
         // GET: HomeController1
-        public ActionResult Index()
+        public ActionResult Index(string query=null)
         {
-            return View(repository.GetAll());
+            if (query == null)
+            {
+                return View(repository.GetAll());
+            }
+            return View(repository.SearchByName(query));
         }
 
         // GET: HomeController1/Details/5

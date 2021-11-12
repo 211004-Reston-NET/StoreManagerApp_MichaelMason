@@ -7,4 +7,4 @@ appsettings.json
 Web/appsettings.json
 Releases
 Depr
-log.json
+log*.json
