@@ -85,7 +85,7 @@ namespace UnitTest
         {
             using (var context = new StoreManagerContext(_options))
             {
-                IRepository<Customer> repo = new CustomerRepository(context);
+                IRepository<Customer> repo = new Repository<Customer>(context);
                 Customer customer = context.Customers.Find(1);
                 repo.Delete(customer);
                 repo.Save();
