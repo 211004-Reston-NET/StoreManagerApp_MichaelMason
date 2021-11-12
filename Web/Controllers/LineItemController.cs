@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,8 +61,9 @@ namespace Web.Controllers
                 lineItemRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }
@@ -93,8 +95,9 @@ namespace Web.Controllers
                 lineItem.Quantity = int.Parse(collection["Quantity"]);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }
@@ -117,8 +120,9 @@ namespace Web.Controllers
                 lineItemRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Business;
 using Models;
+using Serilog;
 
 namespace Web.Controllers
 {
@@ -120,8 +121,9 @@ namespace Web.Controllers
                 orderRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }
@@ -151,8 +153,9 @@ namespace Web.Controllers
                 orderRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }
@@ -175,8 +178,9 @@ namespace Web.Controllers
                 orderRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }

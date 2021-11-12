@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Models;
 using Business;
+using Serilog;
+using System;
 
 namespace Web.Controllers
 {
@@ -50,8 +52,9 @@ namespace Web.Controllers
                 repository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }
@@ -78,8 +81,9 @@ namespace Web.Controllers
                 repository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View(repository.GetByPrimaryKey(id));
             }
         }
@@ -102,8 +106,9 @@ namespace Web.Controllers
                 repository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception e)
             {
+                Log.Error(e.Message);
                 return View();
             }
         }

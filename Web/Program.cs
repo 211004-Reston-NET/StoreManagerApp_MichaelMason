@@ -17,7 +17,7 @@ namespace Web
         {
             Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()
-                .WriteTo.File(new JsonFormatter(),"Logs/log.json")
+                .WriteTo.File(new JsonFormatter(),"Logs/log.json", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
 
             try
