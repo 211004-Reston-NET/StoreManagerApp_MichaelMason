@@ -43,6 +43,7 @@ namespace UnitTest
         {
             Assert.Throws<FormatException>(() => testProduct.ProdDescription = input);
         }
+        [Theory]
         [InlineData(null)]
         public void ProductDescriptionThrowsExceptionOnNull(string input)
         {

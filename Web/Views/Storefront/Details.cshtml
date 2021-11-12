@@ -30,11 +30,11 @@
         <caption>Store Details</caption>
         <thead>
             <tr>
-                <td scope="col">Product</td>
-                <td scope="col">Price</td>
-                <td scope="col">Description</td>
-                <td scope="col">Category</td>
-                <td scope="col">Quantity</td>
+                <th scope="col">Product</td>
+                <th scope="col">Price</td>
+                <th scope="col">Description</td>
+                <th scope="col">Category</td>
+                <th scope="col">Quantity</td>
             </tr>
         </thead>
         @foreach (var item in Model.Inventories)
@@ -52,10 +52,11 @@
 <div class="card">
     <h3 class="card-header">Orders</h3>
     <table class="table table-striped">
+        <caption>Store Orders</caption>
         <thead>
             <tr>
-                <td>Order Number</td>
-                <td>Total Price</td>
+                <th scope="col">Order Number</td>
+                <th scope="col">Total Price</td>
             </tr>
         </thead>
         @foreach (var item in Model.SOrders)

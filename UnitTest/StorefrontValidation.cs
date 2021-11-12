@@ -46,6 +46,7 @@ namespace UnitTest
         {
             Assert.Throws<FormatException>(() => testStorefront.StoreAddress = input);
         }
+        [Theory]
         [InlineData(null)]
         public void StoreAddressThrowsExceptionOnNull(string input)
         {
