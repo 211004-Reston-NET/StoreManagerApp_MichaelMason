@@ -15,6 +15,10 @@ namespace Data
         {
         }
 
+        /// <summary>
+        /// Queries DB for all Cutomer entities, eager loads navigation properties
+        /// </summary>
+        /// <returns>IEnumerable<LineItem></returns>
         public IEnumerable<LineItem> GetAllWithNav()
         {
             var lineItems = _context.LineItems
@@ -23,6 +27,11 @@ namespace Data
             return lineItems;
         }
 
+        /// <summary>
+        /// Queries DB for single item based on pirmary key, eager loads navigation properties
+        /// </summary>
+        /// <param name="lineId">int</param>
+        /// <returns>LineItem entity</returns>
         public LineItem GetByPrimaryKeyWithNav(int lineId)
         {
             var lineItem = _context.LineItems

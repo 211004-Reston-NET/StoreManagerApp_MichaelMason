@@ -15,6 +15,10 @@ namespace Data
         {
         }
 
+        /// <summary>
+        /// Queries DB for all SOrder entities, eager loads navigation properties
+        /// </summary>
+        /// <returns>IEnumerable<SOrder></returns>
         public IEnumerable<SOrder> GetAllWithNav()
         {
             var orders = _context.SOrders
@@ -23,6 +27,11 @@ namespace Data
             return orders;
         }
 
+        /// <summary>
+        /// Queries DB for single item based on pirmary key, eager loads navigation properties
+        /// </summary>
+        /// <param name="orderId">int</param>
+        /// <returns>SOrder entity</returns>
         public SOrder GetByPrimaryKeyWithNav(int orderId)
         {
             var order = _context.SOrders
@@ -34,6 +43,12 @@ namespace Data
             return order;
         }
 
+
+        /// <summary>
+        /// Updates Inventory quantity based on product id and line item quantity
+        /// </summary>
+        /// <param name="prodId">int</param>
+        /// <param name="quantity">int</param>
         public void UpdateInventoryOnSale(int prodId, int quantity)
         {
             var inventory = _context.Inventories.Single(i => i.ProdId.Equals(prodId));

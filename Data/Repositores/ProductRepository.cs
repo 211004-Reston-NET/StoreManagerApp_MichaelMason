@@ -15,6 +15,10 @@ namespace Data
         {
         }
 
+        /// <summary>
+        /// Queries DB for all Product entities, eager loads navigation properties
+        /// </summary>
+        /// <returns>IEnumerable<Product></returns>
         public IEnumerable<Product> GetAllWithNav()
         {
             var products = _context.Products
@@ -23,6 +27,11 @@ namespace Data
             return products;
         }
 
+        /// <summary>
+        /// Queries DB for single item based on pirmary key, eager loads navigation properties
+        /// </summary>
+        /// <param name="prodId">int</param>
+        /// <returns>Product entity</returns>
         public Product GetByPrimaryKeyWithNav(int prodId)
         {
             var product = _context.Products

@@ -14,6 +14,10 @@ namespace Data
         public InventoryRepository(StoreManagerContext context) : base(context)
         { }
 
+        /// <summary>
+        /// Queries DB for all Inventory entities, eager loads navigation properties
+        /// </summary>
+        /// <returns>IEnumerable<Inventory></returns>
         public IEnumerable<Inventory> GetAllWithNav()
         {
             var inventory = _context.Inventories
@@ -22,6 +26,11 @@ namespace Data
             return inventory;
         }
 
+        /// <summary>
+        /// Queries DB for single item based on pirmary key, eager loads navigation properties
+        /// </summary>
+        /// <param name="intId">int</param>
+        /// <returns>Inventory entity</returns>
         public Inventory GetByPrimaryKeyWithNav(int invId)
         {
             var inventory = _context.Inventories
