@@ -29,7 +29,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter a name");
+                    throw new ArgumentNullException("You must enter a name");
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9.' !]+$", RegexOptions.IgnoreCase))
                 {
@@ -49,7 +49,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter an address");
+                    throw new ArgumentNullException("You must enter an address");
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9. ,'-]+$", RegexOptions.IgnoreCase))
                 {

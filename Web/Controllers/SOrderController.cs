@@ -70,11 +70,11 @@ namespace Web.Controllers
                     if (item.Key.Contains("productId"))
                     {
                         productIds.Add(int.Parse(item.Value));
-                    }
+                    };
                     if (item.Key.Contains("lineQuant"))
                     {
                         lineQuantities.Add(int.Parse(item.Value));
-                    }
+                    };
                 };
 
                 var order = new SOrder

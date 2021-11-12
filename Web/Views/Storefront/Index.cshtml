@@ -10,15 +10,15 @@
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table table-striped table-hover table-responsive">
+    <caption>All Stores</caption>
     <thead>
         <tr>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.StoreName)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.StoreAddress)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>

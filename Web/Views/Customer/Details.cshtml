@@ -20,11 +20,12 @@
 <div class="card">
     <h3 class="card-header">Orders</h3>
     <table class="table table-striped">
+        <caption>Customer Orders</caption>
         <thead>
             <tr>
-                <th>Order Id</th>
-                <th>Store Name</th>
-                <th>Total</th>
+                <th scope="col">Order Id</th>
+                <th scope="col">Store Name</th>
+                <th scope="col">Total</th>
             </tr>
         </thead>
         @foreach (var item in Model.SOrders)

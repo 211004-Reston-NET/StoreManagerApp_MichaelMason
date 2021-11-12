@@ -31,7 +31,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter a product name");
+                    throw new ArgumentNullException("You must enter a product name");
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9.' !-]+$", RegexOptions.IgnoreCase))
                 {
@@ -50,7 +50,7 @@ namespace Models
             {
                 if (value <= 0)
                 {
-                    throw new Exception("You must enter a price");
+                    throw new ArgumentNullException("You must enter a price");
                 }
                 if (!Regex.IsMatch(value.ToString(), @"^[0-9.]+$", RegexOptions.IgnoreCase))
                 {
@@ -71,7 +71,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter an description");
+                    throw new ArgumentNullException("You must enter an description");
                 }
                 if (!Regex.IsMatch(value, @"^[a-zA-Z0-9.',/ !-]+$", RegexOptions.IgnoreCase))
                 {
@@ -92,7 +92,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter an category");
+                    throw new ArgumentNullException("You must enter an category");
                 }
                 if (!Regex.IsMatch(value, @"^[a-z ]+$", RegexOptions.IgnoreCase))
                 {

@@ -27,12 +27,13 @@
 </div>
 <div class="card">
     <table class="table table-striped">
+        <caption>Order Details</caption>
         <thead>
             <tr>
-                <th>Product Id</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
+                <th scope="col">Product Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
             </tr>
         </thead>
         @foreach (var item in Model.LineItems)

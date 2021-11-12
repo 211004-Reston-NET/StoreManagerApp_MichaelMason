@@ -10,18 +10,19 @@
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
+    <caption>Corporate Inventory</caption>
     <thead>
         <tr>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.StoreNumberNavigation.StoreName)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Prod.ProdName)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Quantity)
             </th>
-            <th></th>
+            
         </tr>
     </thead>
     <tbody>

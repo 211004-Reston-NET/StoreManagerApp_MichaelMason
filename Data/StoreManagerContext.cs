@@ -157,10 +157,6 @@ namespace Data
 
                 entity.Property(e => e.StoreNumber).HasColumnName("store_number");
 
-                //entity.Property(e => e.Date)
-                    // .HasColumnType("datetime")
-                    // .HasColumnName("date");
-
                 entity.Property(e => e.TotalPrice)
                     .HasColumnType("money")
                     .HasColumnName("total_price");

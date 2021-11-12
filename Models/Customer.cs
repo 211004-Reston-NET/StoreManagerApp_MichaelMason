@@ -30,7 +30,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter an email");
+                    throw new ArgumentNullException("You must enter an email");
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9.+@]+$", RegexOptions.IgnoreCase))
                 {
@@ -50,7 +50,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter an name");
+                    throw new ArgumentNullException("You must enter an name");
                 }
                 if (!Regex.IsMatch(value, @"^[a-z -]+$", RegexOptions.IgnoreCase))
                 {
@@ -70,7 +70,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter an address");
+                    throw new ArgumentNullException("You must enter an address");
                 }
                 if (!Regex.IsMatch(value, @"^[a-z0-9. ,-]+$", RegexOptions.IgnoreCase))
                 {
@@ -90,7 +90,7 @@ namespace Models
             {
                 if (value == null)
                 {
-                    throw new Exception("You must enter a phone number");
+                    throw new ArgumentNullException("You must enter a phone number");
                 }
                 if (!Regex.IsMatch(value, @"^[0-9-]+$"))
                 {

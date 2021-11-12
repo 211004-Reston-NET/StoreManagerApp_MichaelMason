@@ -15,8 +15,6 @@ namespace Web.Controllers
         readonly IProductBL productRepository;
         readonly ISOrderBL orderRepository;
 
-        private static LineItem lineItem;
-
         public LineItemController(ILineItemBL context, IProductBL prodContext, ISOrderBL orderContext)
         {
             this.lineItemRepository = context;
@@ -43,7 +41,6 @@ namespace Web.Controllers
             IEnumerable<Product> products = productRepository.GetAll();
             ViewData["orders"] = orders;
             ViewData["products"] = products;
-            lineItem = new LineItem();
             return View();
         }
 
@@ -52,6 +49,7 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
+            LineItem lineItem = new LineItem();
             try
             {
                 lineItem.OrderId = int.Parse(collection["OrderId"]);

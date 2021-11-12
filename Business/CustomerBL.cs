@@ -12,7 +12,6 @@ namespace Business
     public class CustomerBL : BaseBL<Customer>, ICustomerBL
     {
         protected readonly ICustomerRepository customerRepository;
-        //protected readonly IRepository<Customer> context;
 
         public CustomerBL(ICustomerRepository customerRepository) : base(customerRepository)
         {
@@ -22,16 +21,6 @@ namespace Business
         public Customer GetByPrimaryKeyWithNav(int id)
         {
             return customerRepository.GetByPrimaryKeyWithNav(id);
-            /*
-            var customer = customerRepository.GetByPrimaryKey(id);
-            var orders = orderRepository.GetAll().Where(o => o.CustNumber.Equals(customer.CustNumber)).ToList();
-            foreach (var item in orders)
-            {
-                var store = storeRepository.GetByPrimaryKey((int)item.StoreNumber);
-                item.StoreNumberNavigation.StoreNumber = (int)store.StoreNumber;
-            }
-            */
-            //return customer;
         }
 
         public IEnumerable<Customer> SearchByName(string query)

@@ -27,13 +27,14 @@
 <div class="card">
     <h3 class="card-header">Inventory</h3>
     <table class="table table-striped">
+        <caption>Store Details</caption>
         <thead>
             <tr>
-                <td>Product</td>
-                <td>Price</td>
-                <td>Description</td>
-                <td>Category</td>
-                <td>Quantity</td>
+                <td scope="col">Product</td>
+                <td scope="col">Price</td>
+                <td scope="col">Description</td>
+                <td scope="col">Category</td>
+                <td scope="col">Quantity</td>
             </tr>
         </thead>
         @foreach (var item in Model.Inventories)
