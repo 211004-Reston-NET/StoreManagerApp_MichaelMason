@@ -15,10 +15,6 @@ namespace Models
         }
 
         public int CustNumber { get; set; }
-        string _custEmail;
-        string _custName;
-        string _custAddress;
-        string _custPhone;
 
         [Required]
         [Display(Name = "Email")]
@@ -41,24 +37,5 @@ namespace Models
         public string CustPhone  { get; set; }
 
         public virtual ICollection<SOrder> SOrders { get; set; }
-    
-        public override string ToString()
-        {
-            var output = $@"Customer {this.CustNumber}
------
-Name: {this.CustName}
-Address: {this.CustAddress}
-Email: {this.CustEmail}
-Phone: {this.CustPhone}
------
-";
-            return output;
-
-        }
-
-        public string ToList()
-        {
-            return $"[{this.CustNumber}] | {this.CustName} | {this.CustAddress} | {this.CustEmail} | {this.CustPhone}";
-        }
     }
 }

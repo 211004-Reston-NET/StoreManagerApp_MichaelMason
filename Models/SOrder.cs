@@ -27,16 +27,5 @@ namespace Models
         public virtual Customer CustNumberNavigation { get; set; }
         public virtual Storefront StoreNumberNavigation { get; set; }
         public virtual ICollection<LineItem> LineItems { get; set; }
-
-        public override string ToString()
-        {
-            var output = $@"Order #{this.OrderId} | Total: {this.TotalPrice}
-{this.LineItems}
---
-
-            
-            ";
-            return output;
-        }
     }
 }

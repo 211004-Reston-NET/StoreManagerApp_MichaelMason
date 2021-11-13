@@ -13,12 +13,10 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         readonly IProductBL productRepository;
 
         public HomeController(ILogger<HomeController> logger, IProductBL context)
         {
-            _logger = logger;
             productRepository = context;
         }
 

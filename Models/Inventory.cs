@@ -20,21 +20,5 @@ namespace Models
 
         public virtual Product Prod { get; set; }
         public virtual Storefront StoreNumberNavigation { get; set; }
-
-        public override string ToString()
-        {
-            var output = $@"Product:
-store: {this.StoreNumber}
-id: {this.ProdId}
-quantity: {this.Quantity}
-";
-        return output;
-        }
-
-        public string ToList()
-        {
-            
-            return $"{this.StoreNumber} . {this.ProdId} . {this.Quantity}";
-        }
     }
 }

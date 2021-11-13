@@ -16,10 +16,6 @@ namespace Models
         }
 
         public int ProdId { get; set; }
-        string _prodName;
-        decimal _prodPrice;
-        string _prodDescription;
-        string _prodCategory;
 
         [Required]
         [Display(Name = "Name")]

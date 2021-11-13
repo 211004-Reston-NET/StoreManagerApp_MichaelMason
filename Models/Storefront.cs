@@ -16,8 +16,6 @@ namespace Models
         }
 
         public int StoreNumber { get; set; }
-        string _storeName;
-        string _storeAddress;
 
         [Required]
         [Display(Name = "Name")]
@@ -31,19 +29,5 @@ namespace Models
        
         public virtual ICollection<Inventory> Inventories { get; set; }
         public virtual ICollection<SOrder> SOrders { get; set; }
-
-        public override string ToString()
-        {
-            var output = $@"Store {this.StoreNumber}
-Name: {this.StoreName}
-Address: {this.StoreAddress}            
-";
-        return output;
-        }
-
-        public string ListView()
-        {
-            return $"[{this.StoreNumber}] {this.StoreName} | {this.StoreAddress}";
-        }
     }
 }
