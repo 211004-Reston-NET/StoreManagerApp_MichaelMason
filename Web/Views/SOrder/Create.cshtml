@@ -4,9 +4,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>New Order</h1>
 
-<h4>SOrder</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -47,7 +46,7 @@
                         </div>
                         <div class="form-group">
                             <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
-                            <input name="lineQuant${rowNum}" asp-for='@ViewData["lineItem.Quantity"]' class= "form-control" />
+                            <input type="number" min="1" value="1" step="1" pattern="\d+" name="lineQuant${rowNum}" asp-for='@ViewData["lineItem.Quantity"]' class= "form-control" />
                             <span asp-validation-for='@ViewData["lineItem.Quantity"]' class="text-danger"></span>
                         </div>
                         <input type="button" value="Remove" onclick="removeRow(${rowNum});">
@@ -72,7 +71,7 @@
                 </div>
                 <div class="form-group">
                     <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
-                    <input asp-for='@ViewData["lineItem.Quantity"]' class="form-control" />
+                    <input type="number" min="1" value="1" step="1" pattern="\d+" asp-for='@ViewData["lineItem.Quantity"]' class="form-control" />
                     <span asp-validation-for='@ViewData["lineItem.Quantity"]' class="text-danger"></span>
                 </div>
                 <input onclick="addRow(this.div);" type="button" value="Add row" />
