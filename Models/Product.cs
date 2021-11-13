@@ -28,6 +28,7 @@ namespace Models
 
         [Required]
         [Display(Name = "Price")]
+        [Range(1, int.MaxValue, ErrorMessage = "Invalid price")]
         public decimal ProdPrice { get; set; }
 
         [Required]

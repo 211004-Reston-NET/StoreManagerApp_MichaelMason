@@ -1,89 +1,141 @@
 using System;
 using Xunit;
 using Models;
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+//https://stackoverflow.com/questions/2167811/unit-testing-asp-net-dataannotations-validation
 
 namespace UnitTest
 {
     public class CustomerValidation
     {
-        Customer testCustomer = new Customer();
-
         [Fact]
-        public void CustomerNumberIsValid()
+        public void CustomerNameRequired()
         {
-            testCustomer.CustNumber = 123;
-            Assert.Equal(123, testCustomer.CustNumber);
-        }
+            var cust = new Customer
+            {
+                CustName = null,
+                CustAddress = "jkhakf",
+                CustEmail = "lksjdf",
+                CustPhone = "2098342432"
+            };
 
-        [Fact]
-        public void CustomerNameIsValid()
-        {
-            var name = "Joe";
-            testCustomer.CustName = name;
-            Assert.NotNull(testCustomer.CustName);
-            Assert.Equal(testCustomer.CustName, name);
-        }
-
-        [Theory]
-        [InlineData("Abc123")]
-        [InlineData("adb@#$")]
-        public void CustomerNameThrowsExceptionOnInvalid(string input)
-        {
-            Assert.Throws<FormatException>(() => testCustomer.CustName = input);
-        }
-        [Theory]
-        [InlineData(null)]
-        public void CustomerNameThrowsExceptionOnNull(string input)
-        {
-            Assert.Throws<ArgumentNullException>(() => testCustomer.CustName = input);
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
         }
 
         [Fact]
-        public void AssertAddressIsValid()
+        public void CustomerNameValid()
         {
-            var address = "123 Test St., Test AK, 00000";
-            testCustomer.CustAddress = address;
-            Assert.NotNull(testCustomer.CustAddress);
-            Assert.Equal(address, testCustomer.CustAddress);
+            var cust = new Customer
+            {
+                CustName = "(*()*$!,",
+                CustAddress = "jkhakf",
+                CustEmail = "lksjdf",
+                CustPhone = "2098342432"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
         }
 
-        [Theory]
-        [InlineData("!234 test")]
-        [InlineData("@234 jkljfs")]
-        public void AddressThrowsExceptionOnInvalid(string input)
+
+        [Fact]
+        public void CustomerEmailRequired()
         {
-            Assert.Throws<FormatException>(() => testCustomer.CustAddress = input);
-        }
-        [Theory]
-        [InlineData(null)]
-        public void AddressThrowsExceptionOnNull(string input)
-        {
-            Assert.Throws<ArgumentNullException>(() => testCustomer.CustAddress = input);
+            var cust = new Customer
+            {
+                CustName = "kjhaksjf",
+                CustAddress = "jkhakf",
+                CustEmail = null,
+                CustPhone = "2098342432"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
         }
 
         [Fact]
-        public void CustomerEmailIsValid()
+        public void CustomerEmailValid()
         {
-            var email = "joe@test.com";
-            testCustomer.CustEmail = email;
-            Assert.NotNull(testCustomer.CustEmail);
-            Assert.Equal(email, testCustomer.CustEmail);
+            var cust = new Customer
+            {
+                CustName = "asdffda,",
+                CustAddress = "asdf",
+                CustEmail = "KLHJ(*)_",
+                CustPhone = "2098342432"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
         }
 
-        [Theory]
-        [InlineData("joe!@gmail.com")]
-        [InlineData("joe=@gmail.com")]
-        [InlineData("joe#@gmail.com")]
-        public void EmailThrowsExceptionOnInvalid(string input)
+        [Fact]
+        public void CustomerAddressRequired()
         {
-            Assert.Throws<FormatException>(() => testCustomer.CustEmail = input);
+            var cust = new Customer
+            {
+                CustName = "ljakhf",
+                CustAddress = null,
+                CustEmail = "lksjdf",
+                CustPhone = "2098342432"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
         }
 
-        [Theory]
-        [InlineData(null)]
-        public void EmailThrowsExceptionOnNull(string input)
+        [Fact]
+        public void CustomerAddressValid()
         {
-            Assert.Throws<ArgumentNullException>(() => testCustomer.CustEmail = input);
+            var cust = new Customer
+            {
+                CustName = "asdfasdf",
+                CustAddress = "KHJ*(&()",
+                CustEmail = "lksjdf",
+                CustPhone = "2098342432"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
+        }
+
+        [Fact]
+        public void CustomerPhoneRequired()
+        {
+            var cust = new Customer
+            {
+                CustName = "kljh",
+                CustAddress = "jkhakf",
+                CustEmail = "lksjdf",
+                CustPhone = null
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
+        }
+
+        [Fact]
+        public void CustomerPhoneValid()
+        {
+            var cust = new Customer
+            {
+                CustName = "(*()*$!,",
+                CustAddress = "jkhakf",
+                CustEmail = "lksjdf",
+                CustPhone = "jh9809890afuo"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(cust, null, null);
+            Assert.False(Validator.TryValidateObject(cust, ctx, validationResults, true));
         }
     }
 }

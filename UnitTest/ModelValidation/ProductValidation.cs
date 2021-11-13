@@ -1,75 +1,139 @@
-using System;
+﻿using System;
 using Xunit;
 using Models;
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+//https://stackoverflow.com/questions/2167811/unit-testing-asp-net-dataannotations-validation
 
 namespace UnitTest
 {
     public class ProductValidation
     {
-        Product testProduct = new Product();
         [Fact]
-        public void ProductNameIsValid()
+        public void ProductNameRequired()
         {
-            var name = "Football";
-            testProduct.ProdName = name;
-            Assert.NotNull(testProduct.ProdName);
-            Assert.Equal(name, testProduct.ProdName);
-        }
-        [Theory]
-        [InlineData("F@@tolkjh")]
-        [InlineData("%*&@*&")]
-        public void ProductNameThrowsExceptionOnInvalid(string input)
-        {
-            Assert.Throws<FormatException>(() => testProduct.ProdName = input);
-        }
-        [Theory]
-        [InlineData(null)]
-        public void ProductNameThrowsExceptionOnNull(string input)
-        {
-            Assert.Throws<ArgumentNullException>(() => testProduct.ProdName = input);
-        }
-        [Fact]
-        public void ProductDescriptionIsValid()
-        {
-            var name = "Officially licensed NFL football";
-            testProduct.ProdDescription = name;
-            Assert.NotNull(testProduct.ProdDescription);
-            Assert.Equal(name, testProduct.ProdDescription);
-        }
-        [Theory]
-        [InlineData("F@@tolkjh")]
-        [InlineData("%*&@*&")]
-        public void ProductDescriptionThrowsExceptionOnInvalid(string input)
-        {
-            Assert.Throws<FormatException>(() => testProduct.ProdDescription = input);
-        }
-        [Theory]
-        [InlineData(null)]
-        public void ProductDescriptionThrowsExceptionOnNull(string input)
-        {
-            Assert.Throws<ArgumentNullException>(() => testProduct.ProdDescription = input);
+            var prod = new Product
+            {
+                ProdName = null,
+                ProdPrice = (decimal)1.99,
+                ProdDescription = "kjahf",
+                ProdCategory = "ljkhaf"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
         }
 
         [Fact]
-        public void ProductCategoryIsValid()
+        public void ProductNameValid()
         {
-            var name = "Sporting goods";
-            testProduct.ProdCategory = name;
-            Assert.NotNull(testProduct.ProdCategory);
-            Assert.Equal(name, testProduct.ProdCategory);
+            var prod = new Product
+            {
+                ProdName = "jlkhf897)(*()*_)(*",
+                ProdPrice = (decimal)1.99,
+                ProdDescription = "kjahf",
+                ProdCategory = "ljkhaf"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
         }
-        [Theory]
-        [InlineData("F@@tolkjh")]
-        [InlineData("%*&@*&")]
-        public void ProductCategoryThrowsExceptionOnInvalid(string input)
+
+        [Fact]
+        public void ProductPriceRequired()
         {
-            Assert.Throws<FormatException>(() => testProduct.ProdCategory = input);
+            var prod = new Product
+            {
+                ProdName = "kljahf",
+                ProdDescription = "kjahf",
+                ProdCategory = "ljkhaf"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
         }
-        [Theory]
-        [InlineData(null)]
-        public void ProductCategoryThrowsExceptionOnNull(string input)
+
+        [Fact]
+        public void ProductPriceValid()
         {
-            Assert.Throws<ArgumentNullException>(() => testProduct.ProdCategory = input);
+            var prod = new Product
+            {
+                ProdName = "asfdsf",
+                ProdPrice = 0,
+                ProdDescription = "kjahf",
+                ProdCategory = "ljkhaf"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
+        }
+
+        [Fact]
+        public void ProductDescriptionRequired()
+        {
+            var prod = new Product
+            {
+                ProdName = "kljahf",
+                ProdPrice = (decimal)1.99,
+                ProdDescription = null,
+                ProdCategory = "ljkhaf"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
+        }
+
+        [Fact]
+        public void ProductDescriptionValid()
+        {
+            var prod = new Product
+            {
+                ProdName = "kljhlk",
+                ProdPrice = (decimal)1.99,
+                ProdDescription = "KJLHLI&*)(*)",
+                ProdCategory = "ljkhaf"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
+        }
+
+        [Fact]
+        public void ProductCategoryRequired()
+        {
+            var prod = new Product
+            {
+                ProdName = "kljahf",
+                ProdPrice = (decimal)1.99,
+                ProdDescription = "kjahf",
+                ProdCategory = null
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
+        }
+
+        [Fact]
+        public void ProductCategoryValid()
+        {
+            var prod = new Product
+            {
+                ProdName = "jlkhf",
+                ProdPrice = (decimal)1.99,
+                ProdDescription = "kjahf",
+                ProdCategory = ")*(&*YHKLJH"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(prod, null, null);
+            Assert.False(Validator.TryValidateObject(prod, ctx, validationResults, true));
         }
     }
 }

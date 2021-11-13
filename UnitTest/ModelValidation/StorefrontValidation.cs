@@ -1,56 +1,68 @@
-using System;
+﻿using System;
 using Xunit;
 using Models;
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+//https://stackoverflow.com/questions/2167811/unit-testing-asp-net-dataannotations-validation
 
 namespace UnitTest
 {
     public class StorefrontValidation
     {
-        Storefront testStorefront = new Storefront();
         [Fact]
-        public void StoreNameIsValid()
+        public void StorefrontNameRequired()
         {
-            var name = "Joe's Boot Emporium";
-            testStorefront.StoreName = name;
-            Assert.NotNull(testStorefront.StoreName);
-            Assert.Equal(name, testStorefront.StoreName);
-        }
+            var store = new Storefront
+            {
+                StoreName = null,
+                StoreAddress = "lkhfdsalkjh"
+            };
 
-        [Theory]
-        [InlineData("Joe's b@@t emporium")]
-        [InlineData("Joe's Boot% emporium")]
-        public void StoreNameThrowsExceptionOnInvalid(string input)
-        {
-            Assert.Throws<FormatException>(() => testStorefront.StoreName = input);
-        }
-        [Theory]
-        [InlineData(null)]
-        public void StoreNameThrowsExceptionOnNull(string input)
-        {
-            Assert.Throws<ArgumentNullException>(() => testStorefront.StoreName = input);
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(store, null);
+            Assert.False(Validator.TryValidateObject(store, ctx, validationResults, true));
         }
 
         [Fact]
-        public void StoreAddressIsValid()
+        public void StorefrontNameValid()
         {
-            var address = "123 Test Way, Test AL, 00000-0000";
-            testStorefront.StoreAddress = address;
-            Assert.NotNull(testStorefront.StoreAddress);
-            Assert.Equal(address, testStorefront.StoreAddress);
+            var store = new Storefront
+            {
+                StoreName = "JHO()()*_)()*",
+                StoreAddress = "lkhfdsalkjh"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(store, null);
+            Assert.False(Validator.TryValidateObject(store, ctx, validationResults, true));
         }
 
-        [Theory]
-        [InlineData("@()&&!")]
-        [InlineData(":}{|:?")]
-        public void StoreAddressThrowsExceptionOnInvalid(string input)
+        [Fact]
+        public void StorefrontAddressRequired()
         {
-            Assert.Throws<FormatException>(() => testStorefront.StoreAddress = input);
+            var store = new Storefront
+            {
+                StoreName = "jkhljk",
+                StoreAddress = null
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(store, null);
+            Assert.False(Validator.TryValidateObject(store, ctx, validationResults, true));
         }
-        [Theory]
-        [InlineData(null)]
-        public void StoreAddressThrowsExceptionOnNull(string input)
+
+        [Fact]
+        public void StorefrontAddressValid()
         {
-            Assert.Throws<ArgumentNullException>(() => testStorefront.StoreAddress = input);
+            var store = new Storefront
+            {
+                StoreName = "jkh",
+                StoreAddress = "1213 #(*()@#*"
+            };
+
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(store, null);
+            Assert.False(Validator.TryValidateObject(store, ctx, validationResults, true));
         }
     }
 }
