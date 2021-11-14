@@ -57,7 +57,7 @@ namespace Web.Controllers
         {
             IEnumerable<Customer> customers = customerRepository.GetAll();
             IEnumerable<Storefront> stores = storefrontRepository.GetAll();
-            IEnumerable<Product> products = productRepository.GetAll();
+            IEnumerable<Product> products = productRepository.GetAllWithNav();
             ViewData["customers"] = customers;
             ViewData["stores"] = stores;
             ViewData["products"] = products;
@@ -86,20 +86,40 @@ namespace Web.Controllers
                 };
 
                 LineItem newLine = new LineItem();
-
                 newLine.ProdId = int.Parse(collection["ViewData[products.ProdId]"]);
                 newLine.Quantity = int.Parse(collection["ViewData[lineItem.Quantity]"]);
 
-                order.LineItems.Add(newLine);
+                var prod = productRepository.GetByPrimaryKeyWithNav((int)newLine.ProdId);
+                var inv = prod.Inventories.Single(i => i.ProdId.Equals(prod.ProdId));
+
+                if (newLine.Quantity < inv.Quantity)
+                {
+                    order.LineItems.Add(newLine);
+                }
+                else
+                {
+                    var message = $"Sorry, we only have {inv.Quantity} {prod.ProdName}";
+                    ModelState.AddModelError("InventoryError", message);
+                }
 
                 for (var i=0; i < productIds.Count; i++)
                 {
-                    newLine = new LineItem
+                    prod = productRepository.GetByPrimaryKeyWithNav(productIds[i]);
+                    inv = prod.Inventories.Single(i => i.ProdId.Equals(prod.ProdId));
+                    if (lineQuantities[i] < inv.Quantity)
                     {
-                        Prod = productRepository.GetByPrimaryKeyWithNav(productIds[i]),
-                        Quantity = lineQuantities[i]
-                    };
-                    order.LineItems.Add(newLine);
+                        newLine = new LineItem
+                        {
+                            Prod = prod,
+                            Quantity = lineQuantities[i]
+                        };
+                        order.LineItems.Add(newLine);
+                    }
+                    else 
+                    {
+                        var message = $"Sorry, we only have {inv.Quantity} {prod.ProdName}";
+                        ModelState.AddModelError("InventoryError", message);
+                    }
                 }
 
                 foreach (var item in order.LineItems)
@@ -117,9 +137,13 @@ namespace Web.Controllers
 
                     orderRepository.UpdateInventoryOnSale(id, item.Quantity);
                 }
-                orderRepository.Create(order);
-                orderRepository.Save();
-                return RedirectToAction(nameof(Index));
+
+                if (ModelState.IsValid)
+                {
+                    orderRepository.Create(order);
+                    orderRepository.Save();
+                }
+                return View();
             }
             catch(Exception e)
             {

@@ -47,7 +47,6 @@
                         <div class="form-group">
                             <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
                             <input type="number" min="1" value="1" step="1" pattern="\d+" name="lineQuant${rowNum}" asp-for='@ViewData["lineItem.Quantity"]' class= "form-control" />
-                            <span asp-validation-for='@ViewData["lineItem.Quantity"]' class="text-danger"></span>
                         </div>
                         <input type="button" value="Remove" onclick="removeRow(${rowNum});">
                     </div>
@@ -72,7 +71,7 @@
                 <div class="form-group">
                     <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
                     <input type="number" min="1" value="1" step="1" pattern="\d+" asp-for='@ViewData["lineItem.Quantity"]' class="form-control" />
-                    <span asp-validation-for='@ViewData["lineItem.Quantity"]' class="text-danger"></span>
+                    <span class="text-danger">@Html.ValidationMessage("InventoryError")</span>
                 </div>
                 <input onclick="addRow(this.div);" type="button" value="Add row" />
             </div>
