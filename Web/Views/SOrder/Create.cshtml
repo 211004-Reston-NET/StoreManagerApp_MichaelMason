@@ -13,7 +13,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="StoreNumber" class="control-label">Store</label>
-                <select asp-for="StoreNumber" class="form-control">
+                <select id="store" asp-for="StoreNumber" class="form-control">
                     @foreach (var item in ViewData["stores"] as IEnumerable<Models.Storefront>)
                     {
                         <option value="@item.StoreNumber">@item.StoreName</option>
@@ -29,8 +29,40 @@
                     }
                 </select>
             </div>
-           
-    <script>
+            <div id="itemRows">
+                <div class="form-group">
+                    <label asp-for='@ViewData["products.ProdId"]' class="control-label">Product</label>
+                    <select id="product" asp-for='@ViewData["products.ProdId"]' class="form-control">
+                        @foreach (var item in ViewData["products"] as IEnumerable<Models.Product>)
+                        {
+                            <option value="@item.ProdId">@item.ProdName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
+                    <input type="number" min="1" value="1" step="1" pattern="\d+" asp-for='@ViewData["lineItem.Quantity"]' class="form-control" />
+                    <span class="text-danger">@Html.ValidationMessage("InventoryError")</span>
+                </div>
+                <input onclick="addRow(this.div);" type="button" value="Add row" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+<script>
         var rowNum = 0;
         function addRow(frm) {
             rowNum++;
@@ -59,35 +91,3 @@
             $("div").remove("." + rnum);
         }
     </script>
-
-            <div id="itemRows">
-                <div class="form-group">
-                    <label asp-for='@ViewData["products.ProdId"]' class="control-label">Product</label>
-                    <select asp-for='@ViewData["products.ProdId"]' class="form-control">
-                        @foreach (var item in ViewData["products"] as IEnumerable<Models.Product>)
-                        {
-                            <option value="@item.ProdId">@item.ProdName</option>
-                        }
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
-                    <input type="number" min="1" value="1" step="1" pattern="\d+" asp-for='@ViewData["lineItem.Quantity"]' class="form-control" />
-                    <span class="text-danger">@Html.ValidationMessage("InventoryError")</span>
-                </div>
-                <input onclick="addRow(this.div);" type="button" value="Add row" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

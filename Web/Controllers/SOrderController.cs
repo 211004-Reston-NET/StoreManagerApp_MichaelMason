@@ -56,7 +56,7 @@ namespace Web.Controllers
         public ActionResult Create(IFormCollection collection)
         {
             IEnumerable<Customer> customers = customerRepository.GetAll();
-            IEnumerable<Storefront> stores = storefrontRepository.GetAll();
+            IEnumerable<Storefront> stores = storefrontRepository.GetAllWithNav();
             IEnumerable<Product> products = productRepository.GetAllWithNav();
             ViewData["customers"] = customers;
             ViewData["stores"] = stores;

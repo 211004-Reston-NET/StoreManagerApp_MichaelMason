@@ -24,6 +24,11 @@ namespace Business
             return storefrontRepository.GetByPrimaryKeyWithNav(storeId);
         }
 
+        public IEnumerable<Storefront> GetAllWithNav()
+        {
+            return storefrontRepository.GetAllWithNav();
+        }
+
         /// <summary>
         /// Gets all Storefront entities by entity address field
         /// </summary>

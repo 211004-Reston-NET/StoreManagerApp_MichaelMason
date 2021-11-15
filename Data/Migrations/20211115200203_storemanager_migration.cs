@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class StoreManagerMigration : Migration
+    public partial class storemanager_migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
