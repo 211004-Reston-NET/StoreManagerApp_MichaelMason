@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(StoreManagerContext))]
-    [Migration("20211110172433_storemanagermigration")]
-    partial class storemanagermigration
+    [Migration("20211114094533_StoreManagerMigration")]
+    partial class StoreManagerMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -191,6 +191,41 @@ namespace Data.Migrations
                     b.HasIndex("StoreNumber");
 
                     b.ToTable("s_order");
+                });
+
+            modelBuilder.Entity("Models.SkiResort", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<decimal>("Latitude")
+                        .HasColumnType("decimal(18,2)")
+                        .HasColumnName("resort_latitude");
+
+                    b.Property<decimal>("Longitude")
+                        .HasColumnType("decimal(18,2)")
+                        .HasColumnName("resort_longitude");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("resort_name");
+
+                    b.Property<string>("State")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("resort_state");
+
+                    b.Property<string>("Terrain")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("resort_terrain");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("resort");
                 });
 
             modelBuilder.Entity("Models.Storefront", b =>

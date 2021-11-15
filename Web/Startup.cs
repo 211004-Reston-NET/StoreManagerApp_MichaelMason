@@ -40,6 +40,8 @@ namespace Web
             services.AddScoped<ISOrderRepository, SOrderRepository>();
             services.AddScoped<ILineItemRepository, LineItemRepository>();
             services.AddScoped<IInventoryRepository, InventoryRepository>();
+            services.AddScoped<SkiResortRepository>();
+            services.AddScoped<SkiResortBL>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 

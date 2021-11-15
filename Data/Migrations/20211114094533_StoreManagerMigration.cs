@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class storemanagermigration : Migration
+    public partial class StoreManagerMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -37,6 +37,23 @@ namespace Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK__product__56958AB264BEA269", x => x.prod_id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "resort",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    resort_name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    resort_state = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    resort_terrain = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    resort_latitude = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    resort_longitude = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_resort", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -173,6 +190,9 @@ namespace Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "line_item");
+
+            migrationBuilder.DropTable(
+                name: "resort");
 
             migrationBuilder.DropTable(
                 name: "s_order");

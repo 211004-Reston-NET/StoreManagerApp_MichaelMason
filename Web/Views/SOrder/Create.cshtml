@@ -1,7 +1,7 @@
 ﻿@model Models.SOrder
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "New order";
 }
 
 <h1>New Order</h1>
@@ -29,35 +29,37 @@
                     }
                 </select>
             </div>
-            <script>
-                var rowNum = 0;
-                function addRow(frm) {
-                    rowNum++;
-                    var row = `
-                    <div class="${rowNum}">
-                        <div class="form-group" >
-                            <label asp-for='@ViewData["products.ProdId"]' class="control-label">Product</label>
-                            <select name="productId${rowNum}" asp-for='@ViewData["products.ProdId"]' class="form-control">
-                                @foreach (var item in ViewData["products"] as IEnumerable<Models.Product>)
-                                {
-                                    <option value="@item.ProdId">@item.ProdName</option>
-                                }
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
-                            <input type="number" min="1" value="1" step="1" pattern="\d+" name="lineQuant${rowNum}" asp-for='@ViewData["lineItem.Quantity"]' class= "form-control" />
-                        </div>
-                        <input type="button" value="Remove" onclick="removeRow(${rowNum});">
-                    </div>
-                    `
-                    //var row = '<p id="rowNum' + rowNum + '">Item quantity: <input type="text" name="qty[]" size="4" value="' + frm.add_qty.value + '"> Item name: <input type="text" name="name[]" value="' + frm.add_name.value + '"> <input type="button" value="Remove" onclick="removeRow(' + rowNum + ');"></p>';
-                    $('#itemRows').append(row);
-                }
-                function removeRow(rnum) {
-                    $("div").remove("." + rnum);
-                }
-            </script>
+           
+    <script>
+        var rowNum = 0;
+        function addRow(frm) {
+            rowNum++;
+            var row = `
+            <div class="${rowNum}">
+                <div class="form-group" >
+                    <label asp-for='@ViewData["products.ProdId"]' class="control-label">Product</label>
+                    <select name="productId${rowNum}" asp-for='@ViewData["products.ProdId"]' class="form-control">
+                        @foreach (var item in ViewData["products"] as IEnumerable<Models.Product>)
+                        {
+                            <option value="@item.ProdId">@item.ProdName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for='@ViewData["lineItem.Quantity"]' class="control-label">Quantity</label>
+                    <input type="number" min="1" value="1" step="1" pattern="\d+" name="lineQuant${rowNum}" asp-for='@ViewData["lineItem.Quantity"]' class= "form-control" />
+                </div>
+                <input type="button" value="Remove" onclick="removeRow(${rowNum});">
+            </div>
+            `
+            //var row = '<p id="rowNum' + rowNum + '">Item quantity: <input type="text" name="qty[]" size="4" value="' + frm.add_qty.value + '"> Item name: <input type="text" name="name[]" value="' + frm.add_name.value + '"> <input type="button" value="Remove" onclick="removeRow(' + rowNum + ');"></p>';
+            $('#itemRows').append(row);
+        }
+        function removeRow(rnum) {
+            $("div").remove("." + rnum);
+        }
+    </script>
+
             <div id="itemRows">
                 <div class="form-group">
                     <label asp-for='@ViewData["products.ProdId"]' class="control-label">Product</label>

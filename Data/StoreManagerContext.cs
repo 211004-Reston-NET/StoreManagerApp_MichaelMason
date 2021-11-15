@@ -24,6 +24,7 @@ namespace Data
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<SOrder> SOrders { get; set; }
         public virtual DbSet<Storefront> Storefronts { get; set; }
+        public virtual DbSet<SkiResort> SkiResorts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -194,6 +195,17 @@ namespace Data
                     .HasMaxLength(100)
                     .IsUnicode(false)
                     .HasColumnName("store_name");
+            });
+
+            modelBuilder.Entity<SkiResort>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.ToTable("resort");
+                entity.Property(e => e.Name).HasColumnName("resort_name");
+                entity.Property(e => e.State).HasColumnName("resort_state");
+                entity.Property(e => e.Terrain).HasColumnName("resort_terrain");
+                entity.Property(e => e.Latitude).HasColumnName("resort_latitude");
+                entity.Property(e => e.Longitude).HasColumnName("resort_longitude");
             });
 
             OnModelCreatingPartial(modelBuilder);

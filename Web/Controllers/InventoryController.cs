@@ -14,11 +14,13 @@ namespace Web.Controllers
     {
         readonly IInventoryBl inventoryRepository;
         readonly IStorefrontBL storefrontRepository;
+        readonly IProductBL productRepository;
 
-        public InventoryController(IInventoryBl context, IStorefrontBL storeContext)
+        public InventoryController(IInventoryBl context, IStorefrontBL storeContext, IProductBL prodContext)
         {
             this.inventoryRepository = context;
             this.storefrontRepository = storeContext;
+            this.productRepository = prodContext;
         }
 
         // GET: InventoryController
@@ -118,8 +120,11 @@ namespace Web.Controllers
             try
             {
                 var inventory = inventoryRepository.GetByPrimaryKeyWithNav(id);
+                var prod = productRepository.GetByPrimaryKey((int)inventory.ProdId);
+                productRepository.Delete(prod);
                 inventoryRepository.Delete(inventory);
                 inventoryRepository.Save();
+                productRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
             catch(Exception e)

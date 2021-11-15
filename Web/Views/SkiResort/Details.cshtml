@@ -1,0 +1,56 @@
+﻿@model Models.SkiResort
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>@Model.Name</h1>
+<hr />
+<div>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.State)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Terrain)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Terrain)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+    </dl>
+</div>
+<div>
+    @foreach (var item in Model.Forecasts)
+    {
+        @Html.DisplayFor(i => item.Name)
+        @Html.DisplayFor(i => item.StartTime)
+        <img src="@Html.DisplayFor(i => item.Icon)" alt="Weather forecast icon" />
+        @Html.DisplayFor(i => item.Temperature)
+        @Html.DisplayFor(i => item.TemperatureUnit)
+        @Html.DisplayFor(i => item.DetailedForecast)
+    }
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

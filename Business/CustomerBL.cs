@@ -35,7 +35,7 @@ namespace Business
         /// <returns>IEnumerable<Customer></returns>
         public IEnumerable<Customer> SearchByName(string query)
         {
-            return repository.GetAll().Where(c => c.CustName.ToLower().Contains(query));
+            return repository.GetAll().Where(c => c.CustName.ToLower().Contains(query.ToLower()));
         }
 
         /// <summary>

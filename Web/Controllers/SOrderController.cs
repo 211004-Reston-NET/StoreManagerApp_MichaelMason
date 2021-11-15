@@ -64,6 +64,7 @@ namespace Web.Controllers
             ViewData["lineItem"] = new LineItem();
             try
             {
+                
                 List<int> productIds = new List<int>();
                 List<int> lineQuantities = new List<int>();
                 foreach (var item in collection)
@@ -77,6 +78,7 @@ namespace Web.Controllers
                         lineQuantities.Add(int.Parse(item.Value));
                     }
                 }
+                
 
                 var order = new SOrder
                 {
@@ -102,6 +104,8 @@ namespace Web.Controllers
                     ModelState.AddModelError("InventoryError", message);
                 }
 
+                // run through extra lineitems
+                
                 for (var i=0; i < productIds.Count; i++)
                 {
                     prod = productRepository.GetByPrimaryKeyWithNav(productIds[i]);
@@ -121,7 +125,10 @@ namespace Web.Controllers
                         ModelState.AddModelError("InventoryError", message);
                     }
                 }
+                
 
+
+                // Update price
                 foreach (var item in order.LineItems)
                 {
                     int id = 0;
@@ -138,12 +145,15 @@ namespace Web.Controllers
                     orderRepository.UpdateInventoryOnSale(id, item.Quantity);
                 }
 
+                
                 if (ModelState.IsValid)
                 {
                     orderRepository.Create(order);
                     orderRepository.Save();
                 }
-                return View();
+                
+                return RedirectToAction(nameof(Index));
+
             }
             catch(Exception e)
             {
