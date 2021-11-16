@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Business;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -27,9 +28,26 @@ namespace Web.Controllers
         }
 
         // GET: HomeController1/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(int id, string orderSort = null, string priceSort = null)
         {
-            return View(repository.GetByPrimaryKeyWithNav(id));
+            var customer = repository.GetByPrimaryKeyWithNav(id);
+            if (orderSort == "asc")
+            {
+                customer.SOrders = customer.SOrders.OrderBy(o => o.OrderId).ToList();
+            }
+            if (orderSort == "desc")
+            {
+                customer.SOrders = customer.SOrders.OrderByDescending(o => o.OrderId).ToList();
+            }
+            if (priceSort == "asc")
+            {
+                customer.SOrders = customer.SOrders.OrderBy(o => o.TotalPrice).ToList();
+            }
+            if (priceSort == "desc")
+            {
+                customer.SOrders = customer.SOrders.OrderByDescending(o => o.TotalPrice).ToList();
+            }
+            return View(customer);
         }
 
         // GET: HomeController1/Create

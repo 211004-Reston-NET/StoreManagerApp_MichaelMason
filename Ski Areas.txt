@@ -1,0 +1,684 @@
+resort_name, resort_state, resort_terrain, resort_latitude, resort_longitude
+Cloudmont-Mentone Ski Area, ALABAMA, Both, 34.54, -85.60333
+Cococino XC Ski Trail, ARIZONA, Alpine, 35.36667, -111.96611
+Snowbowl Ski Area, ARIZONA, Both, 35.32782, -111.69517
+Sunrise Peak Ski Area, ARIZONA, Both, 33.97341, -109.56344
+Williams Ski Area, ARIZONA, Both, 35.2106, -112.19241
+Alpine Meadows Ski Area, CALIFORNIA, Both, 39.1574, -120.23907
+Badger Pass Ski Area, CALIFORNIA, Both, 37.66243, -119.6643
+Bear River Resort Ski Area, CALIFORNIA, Both, 38.56102, -120.26461
+Bear Valley Ski Area, CALIFORNIA, Both, 38.49213, -120.0446
+Big Meadows Nordic Ski Trail, CALIFORNIA, Alpine, 36.69889, -118.84861
+Blue Ridge Ski Lift, CALIFORNIA, Both, 34.36917, -117.69194
+Boreal Ridge Ski Area, CALIFORNIA, Both, 39.33157, -120.35101
+Camp Richardson Cross Country Ski Ar, CALIFORNIA, Alpine, 38.92908, -120.0385
+Cedar Pass Ski Area, CALIFORNIA, Both, 41.55598, -120.26104
+Chinese Peak Ski Area, CALIFORNIA, Both, 37.22716, -119.15651
+Coppervale Ski Tow, CALIFORNIA, Both, 40.34528, -120.90278
+Deer Park Ski Area, CALIFORNIA, Both, 39.18657, -120.19907
+Dodge Ridge Ski Area, CALIFORNIA, Both, 38.18631, -119.95016
+Donner Summit Ski Area, CALIFORNIA, Both, 39.32351, -120.3299
+Eagles Peak Ski Area, CALIFORNIA, Both, 39.9735, -120.12046
+Gold Mine Ski Area, CALIFORNIA, Both, 34.22642, -116.86447
+Granlibakken Ski Area, CALIFORNIA, Both, 39.1549, -120.15628
+Green Valley Ski Area, CALIFORNIA, Both, 34.23611, -117.07222
+Holiday Hill Ski Lift, CALIFORNIA, Alpine, 34.36472, -117.67833
+Homewood Ski Area, CALIFORNIA, Both, 39.0799, -120.16739
+June Mountain Ski Area, CALIFORNIA, Both, 37.75133, -119.07263
+Kirkwood Ski Area, CALIFORNIA, Both, 38.67824, -120.04294
+Kratka Ridge Ski Area, CALIFORNIA, Both, 34.35113, -117.89811
+Mount High East Ski Area, CALIFORNIA, Both, 34.36919, -117.67977
+Mount High East Ski Area, CALIFORNIA, Alpine, 34.36696, -117.43059
+Mount High West Ski Area, CALIFORNIA, Both, 34.37169, -117.69199
+Mount High West Ski Area, CALIFORNIA, Alpine, 34.35474, -117.7406
+Mount Reba Ski Area, CALIFORNIA, Both, 38.49547, -120.04905
+Mount Shasta Ski Park Resort, CALIFORNIA, Both, 41.32222, -122.20194
+Mount Waterman Ski Area, CALIFORNIA, Alpine, 34.34613, -117.93367
+Mt. Waterman, CALIFORNIA, Cross-Country, 34.34613, -117.93367
+North Star Ski Area, CALIFORNIA, Both, 39.25573, -120.12268
+Northstar-at-Tahoe Ski Area, CALIFORNIA, Alpine, 39.27323, -120.1024
+Powder Bowl Ski Area, CALIFORNIA, Both, 39.18157, -120.20212
+Shirley Meadow Ski Area, CALIFORNIA, Both, 35.70915, -118.55925
+Sierra Ski Ranch, CALIFORNIA, Both, 38.79694, -120.07806
+Silver Basin Ski Area, CALIFORNIA, Both, 38.63241, -120.20767
+Ski Echo Tahoe, CALIFORNIA, Both, 38.80667, -120.035
+Ski Heil Peak, CALIFORNIA, Both, 40.47278, -121.52111
+Snow Forest Ski Area, CALIFORNIA, Alpine, 34.23444, -116.91667
+Snow Summit Ski Area, CALIFORNIA, Both, 34.22861, -116.89028
+Snow Valley Ski Area, CALIFORNIA, Alpine, 34.21722, -117.03472
+Soda Springs Ski Area, CALIFORNIA, Both, 39.31907, -120.38351
+Squaw Valley Ski Area, CALIFORNIA, Both, 39.19129, -120.25184
+Stover Mountain Ski Area, CALIFORNIA, Both, 40.28931, -121.28938
+Sugar Bowl Ski Area, CALIFORNIA, Both, 39.30434, -120.33573
+Sunrise Ski Area, CALIFORNIA, Both, 34.38835, -117.68421
+Tahoe Donner Ski Area, CALIFORNIA, Both, 39.3524, -120.27157
+Tahoe Ski Bowl Area, CALIFORNIA, Both, 39.065, -120.15917
+Tamarack Cross Country Ski Center, CALIFORNIA, Alpine, 37.61861, -119.00556
+Arapaho Basin Ski Area, COLORADO, Both, 39.6436, -105.87309
+Aspen Highlands Ski Area, COLORADO, Alpine, 39.19111, -106.81694
+Aspen Mountain Ski Area, COLORADO, Both, 39.17611, -106.82861
+Berthoud Pass Ski Area, COLORADO, Both, 39.79943, -105.78003
+Breckenridge Ski Area, COLORADO, Both, 39.47388, -106.07393
+Buttermilk Ski Area, COLORADO, Both, 39.19111, -106.81694
+Chapman Hill Municipal Ski Area, COLORADO, Both, 37.28308, -107.86952
+Conquistador Ski Area, COLORADO, Both, 38.11752, -105.58501
+Cooper Hill Ski Area, COLORADO, Both, 39.36055, -106.30228
+Copper Mountain Ski Area, COLORADO, Both, 39.48638, -106.16143
+Crested Butte Ski Area, COLORADO, Both, 38.88333, -106.94306
+Cuchara Valley Ski Area, COLORADO, Both, 37.34781, -105.12583
+First Creek Ski Cabin, COLORADO, Alpine, 39.83278, -105.76806
+Geneva Basin Ski Area, COLORADO, Both, 39.56806, -105.73031
+Guinn Mountain Ski Trail, COLORADO, Alpine, 39.93556, -105.63111
+Hesperus Ski Center, COLORADO, Both, 37.29778, -108.05444
+Howelsen Hill Ski Area, COLORADO, Both, 40.48276, -106.83896
+Idlewild Ski Area, COLORADO, Both, 39.92471, -105.77837
+Indian Mountain Ski Area, COLORADO, Both, 39.24472, -105.7292
+Jenny Creek Ski Area, COLORADO, Both, 39.93527, -105.58642
+Keystone Ski Area, COLORADO, Both, 39.59055, -105.95338
+Lake Eldora Ski Area, COLORADO, Both, 39.9361, -105.59087
+Loveland Ski Area, COLORADO, Both, 39.67805, -105.90116
+Mary Jane Ski Area, COLORADO, Both, 39.86805, -105.77115
+Monarch Ski Area, COLORADO, Both, 38.51029, -106.33949
+Pikes Peak Ski Area, COLORADO, Both, 38.8864, -105.06167
+Powderhorn Ski Area, COLORADO, Both, 39.06749, -108.15899
+Purgatory Ski Area, COLORADO, Both, 37.62445, -107.82814
+Raton Ski Basin, COLORADO, Both, 37.00528, -104.34611
+Rock Creek Ski Area, COLORADO, Both, 40.16082, -105.5367
+San Isabel Ski Area, COLORADO, Both, 38.09196, -105.12084
+Sevenmile Ski Trail, COLORADO, Alpine, 39.81583, -105.7675
+Silver Creek Ski Area, COLORADO, Both, 40.03999, -105.90421
+Silver Lake Ski Area, COLORADO, Both, 39.82693, -105.64531
+Ski Hi Ranch, COLORADO, Alpine, 37.76472, -107.3475
+Snowmass Ski Area, COLORADO, Both, 39.11889, -107.06583
+Squaw Pass Ski Area, COLORADO, Both, 39.68527, -105.52002
+Stagecoach Ski Area, COLORADO, Both, 40.24442, -106.8673
+Steamboat Ski Area, COLORADO, Both, 40.45637, -106.77285
+Stoner Ski Area, COLORADO, Both, 37.58418, -108.32009
+Telluride Ski Area, COLORADO, Both, 37.92612, -107.84342
+Tenderfoot Ski Area, COLORADO, Both, 38.76751, -105.14862
+Vail Ski Area, COLORADO, Both, 39.61416, -106.37505
+Winter Park Ski Area, COLORADO, Both, 39.88332, -105.77392
+Mohawk Mountain Ski Area, CONNECTICUT, Both, 41.83167, -73.30778
+Mt. Southington Ski Area, CONNECTICUT, Both, 41.5825, -72.92556
+Northview Ski Slope, CONNECTICUT, Both, 41.75056, -72.52667
+Powder Ridge Ski Area, CONNECTICUT, Both, 41.51722, -72.7125
+Ski Sundown, CONNECTICUT, Both, 41.88222, -72.9775
+Winding Trails Cross Country Ski Cen, CONNECTICUT, Alpine, 41.75528, -72.84611
+Woodbury Ski Area, CONNECTICUT, Both, 41.79833, -73.34917
+Sky Valley Ski Area, GEORGIA, Both, 34.9875, -83.33333
+Bald Mountain Ski Area, IDAHO, Both, 43.655, -114.40833
+Bear Gulch Ski Area, IDAHO, Both, 44.14964, -111.28914
+Blizzard Mountain Ski Area, IDAHO, Both, 43.50823, -113.55921
+Caribou Ski Area, IDAHO, Both, 42.86825, -112.33139
+City Ski Area, IDAHO, Both, 43.82905, -115.82262
+Dollar Mountain Ski Area, IDAHO, Both, 43.67917, -114.34222
+Hitt Mountain Ski Area, IDAHO, Both, 44.62931, -116.92822
+Kelly Canyon Ski Area, IDAHO, Both, 43.64575, -111.62999
+Lamarack Ski Area, IDAHO, Both, 46.81569, -116.82547
+Little Lost Ski Area, IDAHO, Both, 43.83324, -113.19448
+Lolo Pass Ski Area, IDAHO, Both, 46.63655, -114.57652
+Lookout Pass Ski Area, IDAHO, Both, 47.45488, -115.69684
+Magic Mountain Ski Area, IDAHO, Both, 42.18824, -114.2856
+North-South Ski Bowl, IDAHO, Both, 47.06583, -116.65667
+Payette Lake Ski Area, IDAHO, Alpine, 44.92821, -116.16181
+Payette Lakes Ski Area, IDAHO, Both, 44.92988, -116.1632
+Pebble Creek Ski Area, IDAHO, Both, 42.77575, -112.15276
+Pine Basin Ski Area, IDAHO, Both, 43.53159, -111.3272
+Pine Street Ski Area, IDAHO, Both, 48.28348, -116.62578
+Pomerelle Ski Area, IDAHO, Both, 42.31213, -113.61197
+Schweitzer Basin Ski Area, IDAHO, Both, 48.38654, -116.61328
+Silverhorn Ski Area, IDAHO, Both, 47.48959, -116.13714
+Snow Haven Ski Area, IDAHO, Both, 45.86904, -116.09127
+Taylor Mountain Ski Area, IDAHO, Both, 43.32548, -111.93082
+Chestnut Mountain, ILLINOIS, Both, 42.41667, -90.42889
+Four Lakes Village, ILLINOIS, Both, 41.80111, -88.07472
+Raging Buffalo Snowboard Park, ILLINOIS, Both, 42.16556, -88.29417
+Ski Snow Star, ILLINOIS, Both, 41.38667, -90.66806
+Villa Olivia Ski Area, ILLINOIS, Both, 42.0125, -88.22
+Paoli Peaks Ski Area, INDIANA, Both, 38.55611, -86.46833
+Perfect North Ski Area, INDIANA, Both, 39.09083, -84.85
+Pines Peak Ski Area, INDIANA, Both, 41.47306, -87.06111
+Ski World, INDIANA, Both, 39.20722, -86.25111
+Fun Valley Ski Area, IOWA, Both, 41.56667, -92.58194
+Mt. Crescent Ski Area, IOWA, Both, 41.39333, -95.86389
+Nor-Ski Runs Ski Area, IOWA, Both, 43.325, -91.81389
+Riverside Hills Ski Area, IOWA, Both, 43.3875, -94.83333
+Seven Oaks Ski Area, IOWA, Both, 42.05972, -93.88
+Big Squaw Ski Area, MAINE, Both, 45.48417, -69.71167
+Big rock-Mars Hill Ski Area, MAINE, Both, 46.52139, -67.81417
+Black Mountain Ski Area, MAINE, Both, 44.58472, -70.6375
+Camden Snow Bowl, MAINE, Both, 44.20972, -69.06528
+Eaton Mountain Ski Area, MAINE, Both, 44.76528, -69.62556
+Lost Valley Ski Area, MAINE, Both, 44.13611, -70.28056
+Mt. Abram Ski Area, MAINE, Both, 44.4, -70.7025
+Mt. Jefferson Ski Area, MAINE, Both, 45.36389, -68.28472
+New Hermon Mountain Ski Area, MAINE, Both, 44.84222, -68.87417
+Saddleback Mountain Ski Area, MAINE, Both, 44.94722, -70.52778
+Shawnee peak Ski Area, MAINE, Both, 44.05472, -70.71333
+Spruce Mountain Ski Area, MAINE, Both, 44.55639, -70.20056
+Sugarloaf Ski Area, MAINE, Both, 45.06611, -70.27389
+Sunday River Ski Area, MAINE, Both, 44.46556, -70.86389
+Titcomb Ski Area, MAINE, Both, 44.64861, -70.17167
+Wisp - McHenry Ski Area, MARYLAND, Both, 39.55833, -79.35306
+Atlantic Forest Ski Area, MASSACHUSETTS, Both, 42.86833, -70.93472
+Berkshire Show Basin Ski Area, MASSACHUSETTS, Both, 42.48722, -72.48722
+Blandford Ski Area, MASSACHUSETTS, Both, 42.19556, -72.9175
+Blue Hills Ski Area, MASSACHUSETTS, Both, 42.24306, -71.09861
+Boston Hill Ski Area, MASSACHUSETTS, Both, 42.64917, -71.09472
+Bousquet Ski Area, MASSACHUSETTS, Both, 42.41611, -73.27972
+Bradford Ski Area, MASSACHUSETTS, Both, 42.74361, -71.05944
+Brodie Mountain Ski Area, MASSACHUSETTS, Both, 42.59528, -73.26278
+Bucksteep Cross-Country Ski Area, MASSACHUSETTS, Alpine, 42.35944, -73.13417
+Butternut Basin Ski Area, MASSACHUSETTS, Both, 42.17028, -73.31472
+Catamount Ski Area, MASSACHUSETTS, Both, 42.42722, -73.25944
+Charlemont Ski Area, MASSACHUSETTS, Both, 42.62778, -72.87028
+Cherry Hill Cross Country Ski Center, MASSACHUSETTS, Alpine, 42.41944, -72.52111
+East Mountain Ski Touring Center, MASSACHUSETTS, Alpine, 42.15861, -72.69278
+Groton Hills Ski Area, MASSACHUSETTS, Both, 42.62306, -71.54111
+Jericho Hill Ski Slope, MASSACHUSETTS, Both, 42.32917, -71.55972
+Jiminy Peak Ski Area, MASSACHUSETTS, Both, 42.55083, -73.29139
+Klein-Innsbruck Ski Area, MASSACHUSETTS, Both, 42.08333, -71.39722
+Mount Greylock Ski Club, MASSACHUSETTS, Both, 42.63306, -73.21583
+Mount Tom Ski and Recreation Area, MASSACHUSETTS, Alpine, 42.24861, -72.63333
+Nashoba Valley Ski Area, MASSACHUSETTS, Both, 42.54417, -71.46611
+Otis Ridge Ski Area, MASSACHUSETTS, Both, 42.19583, -73.1
+Pine Ridge Ski Area, MASSACHUSETTS, Both, 42.40194, -72.10556
+Prospect Hill Ski Area, MASSACHUSETTS, Both, 42.39444, -71.25056
+Sodom Mountain Ski Area, MASSACHUSETTS, Both, 42.07861, -72.81833
+Stony Ledge Ski Trail, MASSACHUSETTS, Alpine, 42.64417, -73.20778
+Thunderbolt Ski Trail, MASSACHUSETTS, Alpine, 42.6375, -73.1525
+Wachusett Mountain Ski Area, MASSACHUSETTS, Both, 42.49944, -71.88694
+Ward Hill Ski Area, MASSACHUSETTS, Both, 42.29583, -71.71333
+Weston XC Ski Trail, MASSACHUSETTS, Alpine, 42.36667, -71.30361
+Williams College Ski Area, MASSACHUSETTS, Both, 42.70083, -73.27972
+ABR Cross Country Ski, MICHIGAN, Alpine, 46.45472, -90.17083
+Addis Lakes Ski Trail, MICHIGAN, Alpine, 46.34444, -86.80806
+Alpine Valley Ski Area, MICHIGAN, Both, 42.69167, -83.55417
+Alquaal - Ishpeming Ski Area, MICHIGAN, Both, 46.48861, -87.6675
+Apple Mountain Ski Area, MICHIGAN, Both, 43.47056, -84.1075
+Big Powderhorn Mt. Ski Area, MICHIGAN, Both, 46.48139, -90.05278
+Bittersweet Ski Area, MICHIGAN, Both, 42.46056, -85.69639
+Blackjack Ski Area, MICHIGAN, Both, 46.48139, -90.05278
+Boyne Highlands Ski Area, MICHIGAN, Both, 45.46861, -84.92222
+Boyne Mountain Ski Area, MICHIGAN, Both, 45.15861, -84.93889
+Briar Hill Ski Jump, MICHIGAN, Both, 44.39861, -85.66667
+Brule Mountain Ski Area, MICHIGAN, Both, 46.02917, -88.70694
+Caberfae Peaks Ski Area, MICHIGAN, Both, 44.2225, -85.69944
+Cannonsburg Ski Area, MICHIGAN, Both, 43.05389, -85.46972
+Chatham Hill Ski Area, MICHIGAN, Both, 46.35694, -86.88667
+Chatham Ski Trail, MICHIGAN, Alpine, 46.36139, -86.89194
+Crystal Mountain Ski Area, MICHIGAN, Both, 44.51972, -85.99167
+Gladstone Ski Park, MICHIGAN, Both, 45.89472, -87.02889
+Hanson Hills Ski Area, MICHIGAN, Both, 44.64444, -84.75528
+Harbor Highlands Ski Club, MICHIGAN, Both, 45.46778, -84.93583
+Hickory Hills Ski Area, MICHIGAN, Both, 44.76306, -85.62056
+Hidden Valley Resort, MICHIGAN, Both, 45.03194, -84.65222
+Homestead Ski Area, MICHIGAN, Both, 44.8975, -85.98528
+Hungerford Cross Country Ski Trail, MICHIGAN, Alpine, 43.71306, -85.62722
+Indianhead Mountain Ski Area, MICHIGAN, Both, 46.47528, -89.93972
+Iroquois Mountain Ski Area, MICHIGAN, Both, 46.4775, -84.68611
+Maple Mountain Ski Area, MICHIGAN, Both, 46.40278, -86.65333
+Marquette Mountain Ski Area, MICHIGAN, Both, 46.54361, -87.39528
+McKenzie Ski Trial, MICHIGAN, Alpine, 44.23889, -85.72917
+Mio Mountain Ski Area, MICHIGAN, Both, 44.63778, -84.14
+Missaukee Mountain Ski Area, MICHIGAN, Both, 44.33528, -85.215
+Mont Ripley Ski Area, MICHIGAN, Both, 47.12194, -88.56889
+Mount Brighton Ski Area, MICHIGAN, Both, 42.53806, -83.80694
+Mt. Holiday Ski Area, MICHIGAN, Both, 44.76306, -85.62056
+Mt. Holly Ski Area, MICHIGAN, Both, 42.82806, -83.56722
+Mt. Mcsauba Ski Area, MICHIGAN, Both, 45.33417, -85.24528
+Mt. Zion Ski Area, MICHIGAN, Both, 46.47722, -90.16778
+Mulligans Ski Area, MICHIGAN, Both, 43.05694, -86.24
+Norway Mountain Ski Area, MICHIGAN, Alpine, 45.78694, -87.90361
+Norway Mt., MICHIGAN, Cross-Country, 45.78694, -87.90361
+Nubs Nob Ski Area, MICHIGAN, Both, 45.46833, -84.90361
+Pando Ski Area, MICHIGAN, Both, 43.12, -85.56
+Petoskey Ski Area, MICHIGAN, Both, 45.37333, -84.95528
+Pine Knob Ski Area, MICHIGAN, Both, 42.74222, -83.36722
+Pine Mountain Ski Area, MICHIGAN, Both, 45.83306, -88.08194
+Pioneer Ski Hill, MICHIGAN, Both, 44.49694, -84.66833
+Porcupine Ski Area, MICHIGAN, Both, 46.68917, -89.85
+Shanty Creek Ski Area, MICHIGAN, Both, 44.92806, -85.20917
+Sheridan Valley Ski Area, MICHIGAN, Both, 44.92444, -84.24167
+Skyline Ski Slide, MICHIGAN, Both, 44.57389, -84.69083
+Snow Snake Mt. Ski Area, MICHIGAN, Both, 44.01917, -84.79944
+Snow Valley Ski Club, MICHIGAN, Both, 44.95889, -84.71028
+Sugar Loaf Ski Area, MICHIGAN, Both, 44.91306, -85.81917
+Summit Ski Club, MICHIGAN, Both, 42.74667, -83.72944
+Swiss Valley Ski Area, MICHIGAN, Both, 41.9025, -85.79944
+Timber Ridge Ski Area, MICHIGAN, Both, 42.36083, -85.87944
+Tree Tops Sylvan Ski Area, MICHIGAN, Both, 45.0275, -84.67472
+Valley Spur Ski Trail, MICHIGAN, Alpine, 46.36306, -86.69944
+Afton Alps Ski Area, MINNESOTA, Both, 44.74333, -92.85222
+Andes Tower Hills Ski Area, MINNESOTA, Both, 45.77806, -95.69583
+Blue Fin XC Area, MINNESOTA, Cross-Country, 48.46333, -92.93722
+Buck Hill Ski Area, MINNESOTA, Both, 44.72306, -93.28694
+Buena Vista Ski Area, MINNESOTA, Both, 47.65833, -94.87778
+Cascade Lodge XC Trail, MINNESOTA, Cross-Country, 47.66417, -90.71222
+Chester Bowl Ski Area, MINNESOTA, Both, 46.78333, -92.10639
+Coffee Mill Ski Area, MINNESOTA, Both, 44.36889, -92.08306
+Detroit Mountain Ski Area, MINNESOTA, Both, 46.81639, -95.78306
+Giants Ridge Ski Area, MINNESOTA, Both, 47.57556, -92.30056
+Hyland Hills Ski Area, MINNESOTA, Both, 44.83056, -93.37111
+Lutsen Mountains Ski Area, MINNESOTA, Both, 47.66417, -90.71222
+Mount Frontenac Ski Area, MINNESOTA, Both, 44.51111, -92.35639
+Mount Kato Ski Area, MINNESOTA, Both, 44.16361, -93.99917
+Powder Ridge Ski Area, MINNESOTA, Both, 45.3125, -94.3
+Quadna Mountain Ski Area, MINNESOTA, Both, 46.96306, -93.58667
+Rainbow Resort XC Trail, MINNESOTA, Cross-Country, 47.18056, -95.93889
+Shingobee Ski Area, MINNESOTA, Both, 47.03528, -94.6425
+Ski Gull Ski Area, MINNESOTA, Both, 46.35806, -94.20056
+Spirit Mountain Ski Area, MINNESOTA, Both, 46.78333, -92.10639
+Welch Village Ski Area, MINNESOTA, Both, 44.56833, -92.73833
+Wild Mountain Ski Area, MINNESOTA, Both, 45.48694, -92.71306
+Hidden Valley Ski Area, MISSOURI, Both, 38.5025, -90.62778
+Snow Bluff Ski Area, MISSOURI, Both, 37.45778, -93.34778
+Snow Creek Ski Area, MISSOURI, Both, 36.96639, -90.3525
+Africa Ski Trail, MONTANA, Alpine, 45.28083, -111.40583
+Alpine Access Ski Trail, MONTANA, Alpine, 45.81722, -110.89583
+Alpinglow Alley Ski Trail, MONTANA, Alpine, 48.485, -114.35278
+Arkansas Traveller Ski Trail, MONTANA, Alpine, 46.83861, -110.70806
+Atlantic Cable Ski Trail, MONTANA, Alpine, 46.25639, -113.24111
+Auto Bahn Ski Trail, MONTANA, Alpine, 45.1875, -109.35
+B-2 Ski Trail, MONTANA, Alpine, 45.69306, -113.95139
+Back Side of the Moon Ski Trail, MONTANA, Alpine, 48.605, -115.62944
+Bear Canyon Ski Lodge, MONTANA, Both, 45.60694, -110.92194
+Bear Paw Ski Bowl, MONTANA, Both, 48.17778, -109.63333
+Big Mt., MONTANA, Cross-Country, 48.485, -114.35278
+Big Sky Ski Area, MONTANA, Both, 45.28074, -111.40583
+Big Sky Ski Trail, MONTANA, Alpine, 47.02361, -113.99639
+Blacktail Ski Area, MONTANA, Both, 48.01656, -114.3732
+Bridger Bowl Ski Area, MONTANA, Both, 45.81713, -110.89666
+Butte Ski Club, MONTANA, Both, 45.9525, -112.60056
+Castle Hill Ski Area, MONTANA, Both, 46.9502, -109.38135
+Deep Creek Ski Area, MONTANA, Both, 45.90407, -113.11396
+Discovery Basin Ski Area, MONTANA, Both, 46.25629, -113.24202
+Essex Cross Country Ski Area, MONTANA, Cross-Country, 48.27378, -113.62485
+Foothills Cross Country Ski Area, MONTANA, Alpine, 48.14295, -113.99264
+Foothills Cross-Country Ski Area, MONTANA, Alpine, 48.13961, -113.99875
+Foy Lake Cross Country Ski Area, MONTANA, Alpine, 48.14878, -114.35515
+Grass Mountain Ski Area, MONTANA, Both, 46.35602, -111.10667
+Lakeview Mountain Ski Area, MONTANA, Both, 44.58991, -111.81362
+Lionhead Ski Area, MONTANA, Both, 44.69548, -111.2911
+Lubrecht Camp Ski Area, MONTANA, Both, 46.89545, -113.44815
+Marshall Ski Area, MONTANA, Both, 46.91989, -113.90677
+Maverick Mountain Ski Area, MONTANA, Both, 45.4349, -113.1295
+Montana Snow Bowl, MONTANA, Cross-Country, 47.02361, -113.99639
+Red Lodge Mountain Ski Area, MONTANA, Both, 45.19021, -109.35077
+Rocky Mountain Hi Ski Area, MONTANA, Both, 47.79157, -112.75148
+Round Meadow Country Ski Area, MONTANA, Alpine, 48.4585, -114.52905
+Round Meadow Cross Country Ski Area, MONTANA, Cross-Country, 48.45822, -114.54127
+Snow Bowl Ski Area, MONTANA, Both, 47.0235, -113.99734
+Snow Park Ski Area, MONTANA, Alpine, 47.01433, -114.02956
+Turner Mountain Ski Area, MONTANA, Alpine, 48.60488, -115.63047
+Wraith Hill Ski Area, MONTANA, Alpine, 46.17184, -113.21174
+Heavenly Valley Ski Area, NEVADA, Both, 38.93769, -119.90878
+Incline Ski Area, NEVADA, Both, 39.25379, -119.9235
+Lee Canyon Ski Area, NEVADA, Both, 36.3036, -115.67974
+Mount Rose Ski Area, NEVADA, Both, 39.32907, -119.88572
+Old Mill Cross Country Ski Area, NEVADA, Alpine, 36.32055, -115.67752
+Sky Tavern Ski Area, NEVADA, Both, 39.33657, -119.8735
+Sky Tavern Ski Area, NEVADA, Alpine, 39.33796, -119.901
+Slide Mountain Ski Area, NEVADA, Both, 39.31879, -119.87128
+Abenaki Ski Area, NEW HAMPSHIRE, Both, 43.61139, -71.22833
+Alpine Ridge Ski Area, NEW HAMPSHIRE, Both, 43.54583, -71.36889
+Attitash Bear Peak Ski Area, NEW HAMPSHIRE, Both, 44.08278, -71.23
+Balsams-Wilderness Ski Area, NEW HAMPSHIRE, Both, 44.85694, -71.79389
+Bear Mountain Ski Trail, NEW HAMPSHIRE, Alpine, 44.04583, -71.2975
+Black Mountain Ski Areal, NEW HAMPSHIRE, Both, 44.16722, -71.16472
+Black Water Ski Area, NEW HAMPSHIRE, Both, 43.24194, -70.91667
+Bretton Woods Ski Area, NEW HAMPSHIRE, Both, 44.25417, -71.46111
+Brookline Ski Area, NEW HAMPSHIRE, Both, 42.73611, -71.69167
+Cannon Mountain Ski Area, NEW HAMPSHIRE, Both, 44.17722, -71.70194
+Dartmouth Skiway, NEW HAMPSHIRE, Both, 43.78694, -72.10083
+Doublehead Ski Trail, NEW HAMPSHIRE, Alpine, 44.16861, -71.14
+Eastman Ski Area, NEW HAMPSHIRE, Both, 43.52222, -72.12917
+Elgin Kirby Ski Area, NEW HAMPSHIRE, Both, 43.26333, -71.53472
+Franconia Cross Country Center, NEW HAMPSHIRE, Alpine, 44.22694, -71.74833
+Great Glen Trails, NEW HAMPSHIRE, Both, 44.38778, -71.17361
+Gunstock Ski Area, NEW HAMPSHIRE, Both, 43.52556, -71.37889
+Highland Ski Area, NEW HAMPSHIRE, Both, 43.40528, -71.55417
+Indian Mound Ski Area, NEW HAMPSHIRE, Both, 42.86278, -71.04722
+Intervale Ski Area, NEW HAMPSHIRE, Both, 44.10444, -71.14083
+Jackson Ski Touring Foundation, NEW HAMPSHIRE, Alpine, 44.145, -71.18583
+King Pine Ski Area, NEW HAMPSHIRE, Both, 43.87083, -71.09167
+King Ridge Ski Area, NEW HAMPSHIRE, Both, 43.37194, -71.99028
+Loon Mountain Ski Area, NEW HAMPSHIRE, Both, 44.05667, -71.63028
+McIntyre Ski Area, NEW HAMPSHIRE, Both, 43.00417, -71.43944
+Moose Mountain Ski Area, NEW HAMPSHIRE, Both, 43.53278, -71.07806
+Mount Cranmore Ski Area, NEW HAMPSHIRE, Both, 44.05556, -71.09389
+Mount Sunapee Ski Area, NEW HAMPSHIRE, Both, 43.34056, -72.07139
+Mount Tecumseh Ski Area, NEW HAMPSHIRE, Both, 43.96278, -71.54222
+Mount Whittier Ski Area, NEW HAMPSHIRE, Both, 43.80806, -71.21444
+Nestlenook Farm on the River Ski Are, NEW HAMPSHIRE, Both, 44.16333, -71.14167
+Norsk Cross Country Resort, NEW HAMPSHIRE, Alpine, 43.41389, -71.98556
+Number Five Ski Trail, NEW HAMPSHIRE, Alpine, 44.09722, -71.12139
+Ossipee Mountain Ski Area, NEW HAMPSHIRE, Both, 43.76, -71.35417
+Pats Peak Ski Area, NEW HAMPSHIRE, Both, 43.16222, -71.79667
+Pinnacle Mountain Ski Area, NEW HAMPSHIRE, Both, 42.97083, -72.21306
+Purity Springs Ski Area, NEW HAMPSHIRE, Both, 43.86111, -71.08889
+Ragged Mountain Ski Area, NEW HAMPSHIRE, Both, 43.47639, -71.84306
+Roads End Farm Ski Area, NEW HAMPSHIRE, Both, 42.88861, -72.44611
+Snapper Ski Trail, NEW HAMPSHIRE, Alpine, 43.99722, -71.82722
+Storrs Hill Ski Area, NEW HAMPSHIRE, Both, 43.63389, -72.25167
+Temple Mountain Ski Area, NEW HAMPSHIRE, Both, 42.84444, -71.88639
+Tenney Mountain Ski Area, NEW HAMPSHIRE, Both, 43.73583, -71.79389
+Tuckerman's Ravine Ski Area, NEW HAMPSHIRE, Both, 44.26306, -71.27528
+Waterville Valley Ski Area, NEW HAMPSHIRE, Both, 43.96528, -71.52917
+Whaleback Ski Resort, NEW HAMPSHIRE, Both, 44.08722, -71.62
+Wildcat Mountain Ski Area, NEW HAMPSHIRE, Both, 44.26, -71.23528
+Campgaw Mountain Ski Area, NEW JERSEY, Both, 41.05417, -74.19972
+Hidden Valley Ski Area, NEW JERSEY, Both, 41.19833, -74.4836
+High Point XC Ski Trail, NEW JERSEY, Alpine, 41.32056, -74.66194
+Mountain Creek Ski Area, NEW JERSEY, Both, 41.19833, -74.4836
+Adventure Ski Trail, NEW MEXICO, Alpine, 36.38778, -105.27222
+Alpine Ski Trail, NEW MEXICO, Alpine, 35.79111, -105.79444
+Als Run, NEW MEXICO, Cross-Country, 36.59449, -105.45278
+Als Run Ski Area, NEW MEXICO, Alpine, 36.59449, -105.45278
+Ambush Ski Trail, NEW MEXICO, Alpine, 33.39722, -105.78806
+Angel Fire Ski Area, NEW MEXICO, Alpine, 36.38033, -105.23555
+Angel Fire Ski Area, NEW MEXICO, Both, 36.38422, -105.27222
+Arriba Ski Trail, NEW MEXICO, Alpine, 36.43778, -105.27222
+Aspen Bowl Ski Area, NEW MEXICO, Both, 35.20701, -106.41836
+Aspen Glade Ski Trail, NEW MEXICO, Alpine, 35.20694, -106.41806
+Aspen Narrows Ski Trail, NEW MEXICO, Alpine, 35.20694, -106.41778
+Baby Bear Ski Trail, NEW MEXICO, Alpine, 36.59444, -105.45222
+Cascade Ski Trail, NEW MEXICO, Alpine, 32.95056, -105.70417
+Fire Escape Ski Trail, NEW MEXICO, Alpine, 36.3875, -105.27222
+High Noon, NEW MEXICO, Cross-Country, 36.59449, -105.45278
+Midway Ski Trail, NEW MEXICO, Alpine, 36.59556, -105.45222
+Pajarito Mountain Ski Area, NEW MEXICO, Both, 35.89033, -106.3928
+Psycho Path, NEW MEXICO, Cross-Country, 36.59449, -105.45278
+Red River Ski Area, NEW MEXICO, Both, 36.70754, -105.41584
+Rio Costilla Ski Area, NEW MEXICO, Both, 36.85893, -105.44806
+Sierra Blanca Ski Area, NEW MEXICO, Both, 33.39733, -105.79916
+Sipapu Ski Area, NEW MEXICO, Both, 36.15505, -105.55195
+Ski Cloudcroft Ski Area, NEW MEXICO, Both, 32.9493, -105.7061
+Snakedance, NEW MEXICO, Cross-Country, 36.59449, -105.45278
+Top Notch Ski Area, NEW MEXICO, Alpine, 33.39733, -105.78861
+Totemoff, NEW MEXICO, Cross-Country, 36.59449, -105.45278
+Triple Chair Number Five Ski Trail, NEW MEXICO, Alpine, 33.39778, -105.78806
+Val Verde Ski Area, NEW MEXICO, Both, 36.55505, -105.32166
+Whitefeather, NEW MEXICO, Cross-Country, 36.59449, -105.45278
+Allegany XC Trail, NEW YORK, Alpine, 42.15778, -78.71528
+Bald Hill Ski Bowl, NEW YORK, Both, 40.84389, -73.02278
+Belleayre Ski Area, NEW YORK, Both, 42.14417, -74.49028
+Big Tupper Ski Area, NEW YORK, Both, 44.22389, -74.46444
+Bob Cat Ski Center, NEW YORK, Both, 42.18861, -74.78611
+Bova Ski Tow, NEW YORK, Both, 42.10111, -78.71639
+Brantling Ski Area, NEW YORK, Both, 43.1475, -77.06917
+Bristol Mountain Ski Area, NEW YORK, Both, 42.87417, -77.28833
+Byrncliff Resort Ski Area, NEW YORK, Both, 42.76333, -78.31
+Catamount Ski Area, NEW YORK, Both, 42.17889, -73.52639
+Cockaigne Ski Area, NEW YORK, Both, 42.29444, -79.1
+Cortina Valley Ski Area, NEW YORK, Both, 42.19583, -74.0975
+Dry Hill Ski Area, NEW YORK, Both, 43.97472, -75.91111
+Fahnestock Ski Slope, NEW YORK, Both, 41.47528, -73.81833
+Four Seasons Ski Area, NEW YORK, Both, 43.02972, -76.00472
+Friends Lake Inn XC Trail, NEW YORK, Cross-Country, 43.62944, -73.84278
+Frost Ridge Ski Area, NEW YORK, Both, 42.97833, -77.98444
+Garnett Hill XC Ski Trail, NEW YORK, Cross-Country, 43.73861, -74.04917
+Gore Mountain Ski Area, NEW YORK, Both, 43.67639, -74.03556
+Greek Peak Ski Area, NEW YORK, Both, 42.60111, -76.18083
+Hickory Ski Area, NEW YORK, Both, 42.81417, -73.94
+Holiday Mountain Ski Area, NEW YORK, Both, 41.65556, -74.68972
+Holiday Valley Ski Area, NEW YORK, Alpine, 42.26194, -78.68
+Holiday Valley Ski Club, NEW YORK, Alpine, 42.26194, -78.68
+Holimont Ski Area, NEW YORK, Both, 42.2725, -78.68889
+Holimont Ski Club, NEW YORK, Alpine, 42.2725, -78.68889
+Hunt Hollow Ski Area, NEW YORK, Both, 42.61528, -77.40278
+Hunter Mountain Ski area, NEW YORK, Both, 42.17778, -74.23083
+Kissing Bridge Ski Area, NEW YORK, Both, 42.61917, -78.65806
+Labrador Mountain Ski Area, NEW YORK, Both, 42.75722, -76.07417
+Lapland Lake Ski Area, NEW YORK, Both, 43.22556, -74.1725
+Maple Ski Ridge, NEW YORK, Both, 42.81417, -73.94
+McCauley Mt. Ski Area, NEW YORK, Both, 43.39583, -74.89
+Mount Peter Ski Area, NEW YORK, Both, 41.24139, -74.29111
+Mount Pisgah Ski Area, NEW YORK, Both, 44.34528, -74.12583
+Mt. Vanhoevenberg XC Ski Trail, NEW YORK, Cross-Country, 44.27944, -73.98028
+North Hampton Park Ski Area, NEW YORK, Both, 43.21361, -77.93944
+Olympic Ski Jump, NEW YORK, Both, 44.25639, -73.965
+Paleface Ski Center, NEW YORK, Both, 44.38111, -73.75556
+Peek n Peak Ski Area, NEW YORK, Both, 42.11917, -79.73278
+Poverty Hill Ski Club, NEW YORK, Both, 42.31556, -78.69583
+Skaneateles Ski Area, NEW YORK, Both, 42.94694, -76.42944
+Ski Plattekill Ski Area, NEW YORK, Both, 42.26667, -74.64861
+Ski Tamarack Ski Area, NEW YORK, Both, 42.64417, -78.685
+Ski Valley Club, NEW YORK, Both, 42.61528, -77.40278
+Snow Ridge Ski Area, NEW YORK, Both, 43.62722, -75.41167
+Song Mountain Ski Area, NEW YORK, Both, 42.79806, -76.10972
+Sterling Forest Ski Area, NEW YORK, Both, 41.1825, -74.31917
+Swain Ski Area, NEW YORK, Both, 42.47778, -77.85361
+Taconic Trails Ski Area, NEW YORK, Both, 42.72222, -73.27917
+Thunder Ridge Ski Area, NEW YORK, Both, 41.51361, -73.60667
+Titus Mountain Ski Area, NEW YORK, Both, 44.72611, -74.23778
+Toggenberg Ski Area, NEW YORK, Both, 42.835, -75.98639
+West Mountain Ski Area, NEW YORK, Both, 43.30944, -73.81583
+White Face Mountain Ski Area, NEW YORK, Both, 44.38833, -73.81583
+Willard Mountain Ski Area, NEW YORK, Both, 43.02, -73.52361
+Windham Ski Area, NEW YORK, Both, 42.29167, -74.25972
+Woods Valley Ski Area, NEW YORK, Both, 43.30556, -75.38333
+Alpine Valley Ski Area, OHIO, Both, 41.24111, -81.55278
+Boston Mills Ski Area, OHIO, Both, 41.27611, -81.53833
+Clear Fork Ski Resort, OHIO, Both, 40.58833, -82.425
+Mad River Mountain Ski Area, OHIO, Both, 40.36111, -83.75972
+Snowtrails Ski Area, OHIO, Both, 40.75833, -82.51556
+Spicy Run Ski Area, OHIO, Both, 39.09889, -83.24667
+Valley Hi Ski Area, OHIO, Both, 40.31333, -83.675
+Alpine Ski Trail, OREGON, Alpine, 45.31889, -121.73139
+Anthony Lakes Ski Area, OREGON, Both, 44.96403, -118.23521
+Arbuckle Ski Area, OREGON, Both, 45.19596, -119.24275
+Cooper Spur Ski Area, OREGON, Both, 45.4126, -121.60559
+Cooper Spur Ski Trail, OREGON, Alpine, 45.40472, -121.63083
+Elk Lake Resort, OREGON, Both, 43.97889, -121.80806
+Glade Ski Trail, OREGON, Alpine, 45.32083, -121.735
+Hoodoo Ski Area, OREGON, Both, 44.40917, -121.87333
+Mount Ashland Ski Area, OREGON, Both, 42.08317, -122.70945
+Mount Hood Meadow Ski Area, OREGON, Both, 45.33121, -121.66365
+Mt. Bachelor Ski Area, OREGON, Both, 43.99528, -121.68028
+Mt. Bailey Snowcat Skiing, OREGON, Both, 43.15528, -122.21944
+Mt. Hood Skibowl, OREGON, Both, 45.29472, -121.76861
+Shelter Cove Resort - Odell Lake, OREGON, Both, 43.54917, -121.96361
+Spout Springs Ski Area, OREGON, Both, 45.75403, -118.05161
+Summit Ski Area, OREGON, Both, 45.30417, -121.75361
+Summit Sno-Park, OREGON, Both, 42.39639, -122.28389
+Sunriver Resort, OREGON, Both, 43.88417, -121.4375
+Timberline Ski Area, OREGON, Both, 45.40306, -121.72833
+Warner Canyon Ski Area, OREGON, Both, 42.23736, -120.29689
+Willamette Pass Ski Area, OREGON, Both, 43.60177, -122.03169
+Alpine Mountain Ski Area, PENNSYLVANIA, Both, 41.11083, -75.23
+Apple Hill Ski Resort, PENNSYLVANIA, Both, 40.63139, -75.60861
+Bear Creek Ski Area, PENNSYLVANIA, Both, 40.51583, -75.55556
+Big Boulder Ski Resort, PENNSYLVANIA, Both, 41.05, -75.60056
+Blue Knob Ski Area, PENNSYLVANIA, Both, 40.28833, -78.56194
+Blue Mountain Ski Area, PENNSYLVANIA, Both, 40.80139, -75.61056
+Boyce Park Ski Area, PENNSYLVANIA, Both, 40.46778, -79.74944
+Camelback Ski Area, PENNSYLVANIA, Both, 41.04778, -75.35556
+Canadohta Ski Slope, PENNSYLVANIA, Both, 41.83222, -79.85833
+Chadds Peak Camp and Ski School, PENNSYLVANIA, Both, 39.87139, -75.62167
+Crystal Lake Ski Area, PENNSYLVANIA, Both, 41.24111, -76.72417
+Denton Hill Ski Area, PENNSYLVANIA, Both, 41.77222, -77.83194
+Doe Mountain Ski Area, PENNSYLVANIA, Both, 40.47528, -75.62889
+Eagle Rock Ski Area, PENNSYLVANIA, Both, 40.95833, -75.975
+Elk Mountain Ski Center, PENNSYLVANIA, Both, 41.72, -75.5575
+Fernwood Ski Area (historical), PENNSYLVANIA, Both, 41.07972, -75.01667
+Glade Knob Ski Slope, PENNSYLVANIA, Both, 39.76139, -79.24083
+Hidden Valley Ski Area, PENNSYLVANIA, Both, 40.05806, -79.2575
+Jack Frost Mountain Ski Area, PENNSYLVANIA, Both, 41.10778, -75.65361
+Laurel Mountain Ski Resort, PENNSYLVANIA, Both, 40.15639, -79.16806
+Little Gap Ski Area, PENNSYLVANIA, Both, 40.81, -75.52
+Masthope Ski Area, PENNSYLVANIA, Both, 41.51417, -75.03139
+Montage Ski Area, PENNSYLVANIA, Both, 41.35833, -75.67056
+Mount Airy Lodge Ski Area, PENNSYLVANIA, Both, 41.10667, -75.32333
+Mount Pleasant Ski Resort, PENNSYLVANIA, Both, 41.85222, -80.07417
+Mount Tone Ski Area, PENNSYLVANIA, Both, 41.84583, -75.30333
+Mt. View Ski Area, PENNSYLVANIA, Both, 41.87417, -80.13194
+Mystic Mountain Ski Area, PENNSYLVANIA, Both, 39.87833, -79.925
+Plateau De Mount Ski Area, PENNSYLVANIA, Both, 40.07222, -79.22861
+Pocono Manor Ski Area, PENNSYLVANIA, Both, 41.0975, -75.35667
+Richmond Hill Ski Area, PENNSYLVANIA, Both, 39.95778, -77.91389
+Saw Creek Ski Area, PENNSYLVANIA, Both, 41.12083, -75.045
+Seven Springs Ski Area, PENNSYLVANIA, Both, 40.02306, -79.2975
+Shawnee Mountain Ski Area, PENNSYLVANIA, Both, 41.03806, -75.07861
+Ski Big Bear Ski Area, PENNSYLVANIA, Both, 41.48194, -74.98639
+Ski Liberty Ski Area, PENNSYLVANIA, Both, 39.75972, -77.37111
+Ski Roundtop Ski Area, PENNSYLVANIA, Both, 40.10667, -76.92667
+Ski Sawmill Ski Area, PENNSYLVANIA, Both, 41.52389, -77.29111
+Ski Snowpeak, PENNSYLVANIA, Both, 40.545, -77.24667
+Snozone Ski Area, PENNSYLVANIA, Both, 40.25222, -80.00306
+Split Rock Ski Area, PENNSYLVANIA, Both, 41.06167, -75.62083
+Tamiment Ski Area, PENNSYLVANIA, Both, 41.13417, -75.015
+Tanglewood Ski Area, PENNSYLVANIA, Both, 41.41306, -75.16472
+Tussey Mountain Ski Resort, PENNSYLVANIA, Both, 40.76917, -77.75361
+White Mountain Ski Area, PENNSYLVANIA, Both, 40.01444, -79.3325
+Whitetail Ski Area, PENNSYLVANIA, Both, 39.82778, -77.90361
+Willowbrook Ski Area, PENNSYLVANIA, Both, 40.125, -79.86667
+Yawgoo Ski Area, RHODE ISLAND, Both, 41.53556, -71.55444
+Big Hill Ski Trail, SOUTH DAKOTA, Alpine, 44.40889, -103.93333
+Deer Mountain Ski Area, SOUTH DAKOTA, Both, 44.30167, -103.825
+Great Bear Ski Area, SOUTH DAKOTA, Both, 43.55, -96.7
+Terry Peak Ski Area, SOUTH DAKOTA, Both, 44.3275, -103.83472
+Ober Gatlinburg Ski Area, TENNESSEE, Both, 35.71417, -83.51028
+Alta Ski Area, UTAH, Both, 40.57967, -111.63828
+Beaver Mountain Ski Area, UTAH, Both, 41.96826, -111.54162
+Blue Mountain Ski Area, UTAH, Both, 37.86056, -109.4368
+Brian Head Ski Area, UTAH, Both, 37.69192, -112.838
+Brighton Ski Area, UTAH, Both, 40.59995, -111.58356
+Brighton Ski Area Heliport, UTAH, Alpine, 40.60134, -111.58328
+Cedar Canyon Ski Area, UTAH, Both, 37.5972, -112.93272
+Deer Valley Ski Area, UTAH, Both, 40.63551, -111.4805
+Elk Meadows Ski Area, UTAH, Both, 38.32386, -112.37134
+Mount Holly Ski Area, UTAH, Both, 38.32053, -112.38411
+Nordic Valley Ski Area, UTAH, Both, 41.30494, -111.87247
+Park City Ski Area, UTAH, Both, 40.64356, -111.50495
+Park City West Ski Area, UTAH, Both, 40.68995, -111.57495
+Powder Mountain Ski Area, UTAH, Both, 41.37772, -111.7719
+Snow Basin Ski Area, UTAH, Both, 41.21188, -111.8519
+Snowland Ski Area, UTAH, Both, 39.65607, -111.33687
+Solitude Ski Area, UTAH, Both, 40.62551, -111.59522
+Sundance Ski Area, UTAH, Both, 40.38578, -111.58161
+Big Bromley Ski Area, VERMONT, Both, 43.22056, -72.94028
+Blueberry Lake Ski Touring Center, VERMONT, Alpine, 44.08528, -72.82722
+Bolton Valley Ski Area, VERMONT, Both, 44.41583, -72.87028
+Burke Mountain Ski Area, VERMONT, Both, 44.58333, -71.90194
+Burke Mountain Ski Touring Center, VERMONT, Alpine, 44.59861, -71.90361
+Camels Hump Nordic Ski Center, VERMONT, Alpine, 44.33222, -72.94389
+Carinthia Ski Area, VERMONT, Both, 42.95722, -72.89778
+Catamount Family Ski Area, VERMONT, Both, 44.45778, -73.0533
+Chittenden Brook Cross-Country Ski T, VERMONT, Alpine, 43.82722, -72.91278
+Churchhill House Ski Area, VERMONT, Both, 43.83167, -73.0525
+Cochran Ski Center, VERMONT, Both, 44.39583, -72.9825
+Edson Hill Cross Country Ski Center, VERMONT, Alpine, 44.51111, -72.72639
+Fox Run Cross Country Ski Center, VERMONT, Alpine, 43.4175, -72.70056
+Glen Ellen Ski Area, VERMONT, Both, 44.17361, -72.90667
+Grafton Cross Country Ski Center, VERMONT, Alpine, 43.15111, -72.62306
+Haystack Mountain Ski Area, VERMONT, Both, 42.92361, -72.90639
+Hazens Notch Ski Touring Center, VERMONT, Alpine, 44.87694, -72.58722
+Hildene Ski Touring Center, VERMONT, Alpine, 43.14694, -73.08861
+Hogback Ski Area, VERMONT, Both, 42.84917, -72.79389
+Jay Peak Ski Area, VERMONT, Both, 44.92444, -72.52611
+Killington Ski Area, VERMONT, Both, 43.62, -72.80694
+Living Memorial Park Ski Area, VERMONT, Both, 43.62, -72.80694
+Lyndon Outing Club Ski Area, VERMONT, Both, 44.51694, -71.97472
+Mad River Glen Ski Area, VERMONT, Both, 44.20083, -72.925
+Majic Mountain Ski Center, VERMONT, Both, 43.20194, -72.77306
+Maple Valley Ski Center, VERMONT, Both, 42.9425, -72.6275
+Middlebury College Ski Area, VERMONT, Both, 44.01194, -73.18306
+Mount Ascuteney Ski Area, VERMONT, Both, 43.46333, -72.46667
+Mount Mansfield Ski Area, VERMONT, Both, 44.5275, -72.79583
+Mount Snow Ski Area, VERMONT, Both, 42.96389, -72.90639
+Mountain Meadows Ski Touring Center, VERMONT, Alpine, 43.66806, -72.8
+Nordio Cross Country Ski Area, VERMONT, Alpine, 43.23222, -72.85417
+Norwich University Ski Area, VERMONT, Both, 44.13889, -72.64278
+Okemo Mountain Ski Area, VERMONT, Both, 43.40444, -72.73278
+Oles Cross Country Ski Center, VERMONT, Alpine, 44.11111, -72.82306
+Pico Peak Ski Area, VERMONT, Both, 43.66167, -72.84306
+Prospect Mountain Ski Center, VERMONT, Both, 42.87528, -73.07583
+Rikert Ski Touring Center, VERMONT, Alpine, 43.9375, -72.95444
+Round Top Mountain Ski Area, VERMONT, Both, 43.53389, -72.74917
+Sherman Hollow Ski Touring Center, VERMONT, Alpine, 44.35667, -73.02528
+Sitzmark Cross Country Ski Center, VERMONT, Alpine, 42.92167, -72.83778
+Smuggler's Notch Ski Area, VERMONT, Both, 44.55528, -72.79611
+Snow Valley Ski Area, VERMONT, Both, 43.19444, -72.97611
+Sonneberg Ski Area, VERMONT, Both, 43.72444, -72.58889
+Spruce Peak Ski Area, VERMONT, Both, 44.54167, -72.77944
+Stowe Ski Area, VERMONT, Both, 44.42972, -72.65056
+Stratton Mountain Ski Center, VERMONT, Both, 43.12806, -72.90944
+Sugarbush Valley Ski Area, VERMONT, Both, 44.13722, -72.90722
+Suicide Six Ski Area, VERMONT, Both, 43.66472, -72.54444
+Tater Hill Ski Center, VERMONT, Both, 43.22194, -72.71833
+The White Horse Ski Touring Center, VERMONT, Alpine, 42.87333, -72.85222
+Timber Creek Ski Resort, VERMONT, Both, 42.96528, -72.8875
+Topnotch Ski Touring Center, VERMONT, Alpine, 44.49806, -72.74417
+Trail Head Ski Touring Center, VERMONT, Alpine, 43.77806, -72.79806
+Trapp Family Lodge and Cross Country, VERMONT, Alpine, 44.465, -72.74528
+Tucker Hill Ski Center, VERMONT, Both, 44.18194, -72.86889
+Twin Farms Ski Area, VERMONT, Both, 43.72861, -72.61944
+Viking Cross Country Ski Area, VERMONT, Alpine, 43.22417, -72.79556
+Wild Wings Ski Touring Center, VERMONT, Alpine, 43.25972, -72.90833
+Wolf Run Cross Country Ski Center, VERMONT, Alpine, 44.82722, -72.77722
+Woodstock Ski Touring Center, VERMONT, Alpine, 43.61472, -72.51583
+Bryce Ski Area, VIRGINIA, Both, 38.80639, -78.7725
+Massanutten Ski Area, VIRGINIA, Both, 38.40917, -78.75417
+The Homestead Ski Area, VIRGINIA, Both, 38.15722, -78.57778
+Wintergreen Ski Area, VIRGINIA, Both, 37.88472, -78.89972
+Alpental Ski Area, WASHINGTON, Both, 47.44315, -121.42952
+Bluewood Ski Area, WASHINGTON, Both, 46.08625, -117.85494
+Brooks Memorial State Park Ski Area, WASHINGTON, Both, 45.98622, -120.67364
+Echo Valley Ski Area, WASHINGTON, Both, 47.93594, -120.05616
+Entiat Valley Ski Area, WASHINGTON, Both, 47.8565, -120.41506
+Forty Nine Degrees North Ski Area, WASHINGTON, Both, 48.29403, -117.57109
+Loup Loup Ski Area, WASHINGTON, Both, 48.39095, -119.91784
+Pacific West Ski Area, WASHINGTON, Both, 47.38815, -121.3998
+Ski Acres Ski Area, WASHINGTON, Both, 47.40676, -121.41369
+Snoqualmie Summit Ski Area, WASHINGTON, Both, 47.42482, -121.41841
+White Pass Ski Area, WASHINGTON, Both, 46.63538, -121.38756
+White Pass X Country Ski Area, WASHINGTON, Cross-Country, 46.63538, -121.40395
+Alpine Lake Resort, WEST VIRGINIA, Both, 39.47472, -79.50083
+Canaan Valley Ski Area, WEST VIRGINIA, Both, 39.13472, -79.40472
+Snowshoe Mountain Ski Area, WEST VIRGINIA, Both, 38.41389, -79.99694
+Timberline Ski Area, WEST VIRGINIA, Both, 39.13472, -79.40472
+Winterplace Ski Area, WEST VIRGINIA, Both, 37.59056, -81.115
+Alpine Valley Ski Area, WISCONSIN, Both, 42.78917, -88.39944
+Ausblick Ski Area, WISCONSIN, Both, 43.13583, -88.21806
+Birch Park Ski Area, WISCONSIN, Both, 45.05333, -92.74861
+Bruce Mound Winter Sports Area, WISCONSIN, Both, 44.44389, -90.79222
+Calumet Ski Area, WISCONSIN, Both, 44.14028, -88.16389
+Cascade Mountain Ski Area, WISCONSIN, Both, 43.49306, -89.51861
+Christie Mountain Ski Area, WISCONSIN, Both, 45.47639, -91.45167
+Christmas Mountain Ski Area, WISCONSIN, Both, 43.6275, -89.77083
+Crystal Ridge Ski Area, WISCONSIN, Both, 42.88639, -88.00972
+Devil's Head Ski Area, WISCONSIN, Both, 43.42167, -89.62778
+Giant Pine Ski and Hike Trail, WISCONSIN, Alpine, 45.78722, -88.98722
+Granite Peak Ski Area, WISCONSIN, Both, 44.95917, -89.63
+Hidden Valley Ski Area, WISCONSIN, Both, 44.27639, -87.80722
+Lake Geneva Ski Area, WISCONSIN, Both, 42.58861, -88.42972
+Little Switzerland Ski Area, WISCONSIN, Both, 43.33361, -88.28611
+Minocqua Winter Park, WISCONSIN, Both, 45.87139, -89.71083
+Mount Valhalla Ski Area, WISCONSIN, Both, 46.71889, -91.0475
+Mt. La Crosse Ski Area, WISCONSIN, Both, 43.80139, -91.23944
+Newman Springs Ski Trail, WISCONSIN, Alpine, 45.94694, -90.1958
+Nordic Mountain Ski Area, WISCONSIN, Both, 44.11806, -89.18444
+Paul Bunyon Ski Area, WISCONSIN, Both, 45.32389, -88.52417
+Rib Mountain Ski Area, WISCONSIN, Both, 44.92472, -89.68417
+Silver Mine Hill Ski Jump, WISCONSIN, Both, 44.77389, -91.58472
+Ski Hill Winter Sports Area, WISCONSIN, Both, 46.13556, -89.19917
+Sky Line Ski Area, WISCONSIN, Both, 43.97056, -89.81667
+Snow Crest Ski Area, WISCONSIN, Both, 45.095, -92.73417
+Standing Rocks Ski Area, WISCONSIN, Both, 44.52361, -89.57444
+Sunburst Ski Area, WISCONSIN, Both, 43.17778, -89.29028
+Telemark Resort, WISCONSIN, Both, 46.18472, -91.25028
+Trollhaugen Ski Area, WISCONSIN, Both, 45.35611, -92.63333
+Tyrol Basin Ski Area, WISCONSIN, Both, 43.00917, -89.73361
+Whitecap Mountain Ski Area, WISCONSIN, Both, 46.42806, -90.24583
+Wilmot Mountain Ski Area, WISCONSIN, Both, 42.51278, -88.18194
+Wintergreen Downhill Ski Area, WISCONSIN, Both, 43.14444, -90.08139
+Bighorn Ski Area, WYOMING, Both, 44.60938, -107.51487
+Elkhart Loop Ski Trail, WYOMING, Alpine, 42.99028, -109.73333
+Grouse Mountain Ski Trail, WYOMING, Alpine, 42.94306, -109.71139
+Hogadon Basin Ski Area, WYOMING, Both, 42.74552, -106.3387
+Jackson Hole Ski Area, WYOMING, Both, 43.59659, -110.84746
+Meadowlark Ski Area, WYOMING, Both, 44.1605, -107.21818
+Medicine Bow Ski Area, WYOMING, Both, 41.33719, -106.18895
+Park Loop Ski Trail, WYOMING, Alpine, 42.94917, -109.74972
+White Pine Lodge Ski Area, WYOMING, Both, 42.97772, -109.75742

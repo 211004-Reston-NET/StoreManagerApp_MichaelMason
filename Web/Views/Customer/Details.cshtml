@@ -23,14 +23,36 @@
         <caption>Customer Orders</caption>
         <thead>
             <tr>
+                <th scope="col">
+                    Date
+                    <form>
+                        <input type="hidden" id="orderSort" name="orderSort" value="asc" />
+                        <button type="submit" class="btn btn-primary">Asc</button>
+                    </form>
+                    <form>
+                        <input type="hidden" id="orderSort" name="orderSort" value="desc" />
+                        <button type="submit" class="btn btn-primary">Desc</button>
+                    </form>
+                </th>
                 <th scope="col">Order Id</th>
                 <th scope="col">Store Name</th>
-                <th scope="col">Total</th>
+                <th scope="col">
+                    Total Price
+                    <form>
+                        <input type="hidden" id="priceSort" name="priceSort" value="asc" />
+                        <button type="submit" class="btn btn-primary">Asc</button>
+                    </form>
+                    <form>
+                        <input type="hidden" id="priceSort" name="priceSort" value="desc" />
+                        <button type="submit" class="btn btn-primary">Desc</button>
+                    </form>
+                </th>
             </tr>
         </thead>
         @foreach (var item in Model.SOrders)
         {
             <tr>
+                <td>@Html.DisplayFor(i => item.Date)</td>
                 <td>@Html.DisplayFor(i => item.OrderId)</td>
                 <td>@Html.DisplayFor(i => item.StoreNumberNavigation.StoreName)</td>
                 <td>@Html.DisplayFor(i => item.TotalPrice)</td>
