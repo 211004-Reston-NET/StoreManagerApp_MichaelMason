@@ -20,11 +20,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    
-    - name: Setup ASP .NET
-      uses: nuget/setup-nuget@v1
-      with:
-        nuget-version: ${{env.NUGET_VERSION}}
       
     - name: Set up JDK 11
       uses: actions/setup-java@v1
@@ -69,11 +64,18 @@ jobs:
         dotnet build --configuration Release --no-restore
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
     
-    - name: Upload artifact for deployment
-      uses: actions/upload-artifact@v2
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: 'Production'
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
       with:
-        name: Web
-        path: Releases
+        dotnet-version: 5.0.x 
 
     - name: Publish
       run: dotnet publish --configuration Release -o Releases
@@ -85,3 +87,34 @@ jobs:
         publish-profile: ${{secrets.AZURE_STOREMANAGERAPP_PUBLISH_PROFILE}}
         package: Releases
 
+  dockerize:
+    runs-on: ubuntu-latest
+    environment:
+      name: Docker
+    
+        steps:
+    
+      - name: Check Out Repo 
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: ./
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
