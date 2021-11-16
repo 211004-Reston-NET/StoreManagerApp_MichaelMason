@@ -12,8 +12,6 @@ namespace Business
     public class SkiResortBL
     {
         readonly SkiResortRepository repository;
-        public string baseUrl = "https://api.weather.gov/";
-        public string points = "points/";
 
         public SkiResortBL(SkiResortRepository context)
         {
@@ -41,13 +39,15 @@ namespace Business
 
         public string GetForcastUrl(decimal latitude, decimal longitude)
         {
+            string baseUrl = "https://api.weather.gov/";
+            string points = "points/";
             var client = new RestClient($"{baseUrl}{points}{latitude},{longitude}");
             var response = client.Execute(new RestRequest());
             var url = WeatherUrlApi.FromJson(response.Content);
             return url.Properties.Forecast.ToString();
         }
 
-        public ForecastApi GetForecast(string url)
+        public static ForecastApi GetForecast(string url)
         {
             var client = new RestClient(url);
             var response = client.Execute(new RestRequest());
