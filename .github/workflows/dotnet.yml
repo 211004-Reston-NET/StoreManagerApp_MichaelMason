@@ -93,11 +93,11 @@ jobs:
       name: Docker
     
     steps:
-      - name: Check Out Repo 
       - uses: actions/checkout@v2
+      - name: Check Out Repo 
 
-      - name: Build & push docker image
       - uses: mr-smithers-excellent/docker-build-push@v5
+      - name: Build & push docker image
         with:
           image: endochroma/storemanager
           tags: v1, latest
