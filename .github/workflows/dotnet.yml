@@ -94,7 +94,7 @@ jobs:
     
     steps:
       - name: Check Out Repo 
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Build & push docker image
       - uses: mr-smithers-excellent/docker-build-push@v5
