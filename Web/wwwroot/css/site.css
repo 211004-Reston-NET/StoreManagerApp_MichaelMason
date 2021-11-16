@@ -60,12 +60,32 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+header {
+    background-image: url("../img/skiers.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-top: -17px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card-img-thumb {
+    width: 200px;
 }
