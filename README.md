@@ -16,6 +16,9 @@ The store app is web app that helps customers purchase products from your busine
 - Order histories should have the option to be sorted by date (latest to oldest and vice versa) or cost (least expensive to most expensive)
 - The manager should be able to replenish inventory
 
+# ERD
+![Alt text](https://github.com/211004-Reston-NET/StoreManagerApp_MichaelMason/raw/main/ERDiagram.png?raw=true "ERD")
+
 ## Technologies
 - C#
 - ASP.NET MVC Framwork
